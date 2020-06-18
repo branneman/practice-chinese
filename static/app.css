@@ -1,0 +1,82 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Serif SC', serif;
+  color: #335;
+}
+
+body {
+  font-size: 16px;
+}
+@media (min-width: 375px) {
+  body {
+    font-size: 18px;
+  }
+}
+@media (min-width: 768px) {
+  body {
+    font-size: 24px;
+  }
+}
+@media (min-width: 1024px) {
+  body {
+    font-size: 36px;
+  }
+}
+@media (min-width: 1280px) {
+  body {
+    font-size: 42px;
+  }
+}
+
+main {
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 0.7em 1em;
+}
+
+.radicals-table .tr {
+  position: relative;
+  border-top: 1px solid #aac;
+  padding: 1em 0 1em 3em;
+}
+.radicals-table .th,
+.radicals-table .td {
+  display: inline-block;
+  vertical-align: top;
+}
+.radicals-table .th {
+  position: absolute;
+  top: 1em;
+  left: 0;
+  font-size: 1.6em;
+}
+.radicals-table .td {
+  width: 4em;
+  height: 4em;
+  margin: 0 1.25em 1.5em 0;
+}
+.pinyin,
+.radical,
+.english {
+  line-height: 1;
+  text-align: center;
+}
+.pinyin,
+.english {
+  font-size: 0.8em;
+}
+.radical {
+  margin-top: 0.1em;
+  margin-bottom: 0.1em;
+  font-size: 1.6em;
+  color: #000;
+}
