@@ -63,6 +63,7 @@ main {
   width: 4em;
   height: 4em;
   margin: 0 1.25em 1.5em 0;
+  cursor: pointer;
 }
 .pinyin,
 .radical,

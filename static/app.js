@@ -25,10 +25,15 @@ function populateTable(table, radicals) {
 
     r.forEach((r) => {
       var td = addClass(doc.createElement('div'), 'td')
-      td.appendChild(addClass(createTextElement('div', r.pinyin), 'pinyin'))
+      td.appendChild(addClass(createTextElement('div', r.pinyin1), 'pinyin'))
       td.appendChild(addClass(createTextElement('div', r.radical), 'radical'))
       td.appendChild(addClass(createTextElement('div', r.english), 'english'))
       tr.appendChild(td)
+
+      td.addEventListener('click', () => {
+        var audio = new Audio('./static/audio/' + r.pinyin2 + '.mp3')
+        audio.addEventListener('canplaythrough', () => audio.play())
+      })
     })
 
     tbody.appendChild(tr)
