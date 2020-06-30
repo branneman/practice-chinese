@@ -2,7 +2,6 @@ window.addEventListener('DOMContentLoaded', domContentLoaded)
 
 var doc = document
 var elem = {}
-var state = { page: 'table' }
 
 function domContentLoaded() {
   if (!__radicals) throw new Error('__radicals not defined')
@@ -11,46 +10,50 @@ function domContentLoaded() {
   populateTable(elem.table, groupRadicals(__radicals))
   addEventListeners()
 
-  if (location.hash === '#random') {
-    switchPage('random')
-  } else {
-    switchPage('table')
-  }
+  switchPage(location.hash.substr(1))
 }
 
+var qs = (x, e = doc) => e.querySelector(x)
+var qsa = (x, e = doc) => [].slice.call(e.querySelectorAll(x))
+
 function cacheElements() {
-  elem.navTable = doc.querySelector('.nav__table')
-  elem.navRandom = doc.querySelector('.nav__random')
+  elem.sections = qsa('.section')
 
-  elem.layoutTable = doc.querySelector('.layout__table')
-  elem.layoutRandom = doc.querySelector('.layout__random')
+  elem.sectionNav = qs('.section--nav')
+  elem.sectionRadicalTable = qs('.section--radical-table')
+  elem.sectionRadicalRandom = qs('.section--radical-random')
+  elem.sectionPinyinTable = qs('.section--pinyin-table')
+  elem.sectionPinyinRandom = qs('.section--pinyin-random')
 
-  elem.table = doc.querySelector('.radicals-table')
+  elem.table = qs('.section--radical-table .radical-table')
 }
 
 function switchPage(page) {
-  if (page === 'table') {
-    elem.navTable.classList.add('active')
-    elem.navRandom.classList.remove('active')
-    elem.layoutTable.classList.remove('hidden')
-    elem.layoutRandom.classList.add('hidden')
-  } else if (page === 'random') {
-    elem.navTable.classList.remove('active')
-    elem.navRandom.classList.add('active')
-    elem.layoutTable.classList.add('hidden')
-    elem.layoutRandom.classList.remove('hidden')
+  elem.sections.forEach((section) => section.classList.add('hidden'))
+
+  switch (page) {
+    case '':
+      elem.sectionNav.classList.remove('hidden')
+      break
+    case 'radical-table':
+      elem.sectionRadicalTable.classList.remove('hidden')
+      break
+    case 'radical-random':
+      elem.sectionRadicalRandom.classList.remove('hidden')
+      break
+    case 'pinyin-table':
+      elem.sectionPinyinTable.classList.remove('hidden')
+      break
+    case 'pinyin-random':
+      elem.sectionPinyinRandom.classList.remove('hidden')
+      break
   }
 }
 
 function addEventListeners() {
-  elem.navTable.addEventListener('click', () => {
-    location.hash = '#table'
-    switchPage('table')
-  })
-  elem.navRandom.addEventListener('click', () => {
-    location.hash = '#random'
-    switchPage('random')
-  })
+  window.addEventListener('hashchange', () =>
+    switchPage(location.hash.substr(1))
+  )
 }
 
 function populateTable(table, radicals) {

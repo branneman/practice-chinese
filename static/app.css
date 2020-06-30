@@ -45,19 +45,22 @@ a {
 }
 
 .nav {
-  display: flex;
-  justify-content: space-between;
   padding: 1em;
 }
 .nav a {
-  display: inline-block;
-  margin-left: 1em;
+  display: block;
+  max-width: 6.5em;
+  margin: 1em auto 0;
   border: 0.07em solid cornflowerblue;
   border-radius: 0.4em;
   box-shadow: 0.1em 0.1em 0.1em -0.05em cornflowerblue;
   padding: 0.2em 0.5em 0.3em;
+  text-align: center;
   text-decoration: none;
-  font-size: 0.8em;
+  font-size: 1.6em;
+}
+.nav a:first-child {
+  margin-top: 0;
 }
 .nav a:hover,
 .nav a:focus,
@@ -66,9 +69,6 @@ a {
   background-color: cornflowerblue;
   color: #fff;
 }
-.nav a:first-child {
-  margin-left: 0;
-}
 
 main {
   min-height: 100vh;
@@ -76,24 +76,25 @@ main {
   padding: 1em 1em 0 1em;
 }
 
-.radicals-table .tr {
+.radical-table .tr {
   position: relative;
   border-top: 0.07em solid #aac;
   padding: 1em 0 1em 2em;
 }
-.radicals-table .th,
-.radicals-table .td {
+.radical-table .th,
+.radical-table .td {
   display: inline-block;
   vertical-align: top;
 }
-.radicals-table .th {
+.radical-table .th {
   position: absolute;
   top: 1em;
   left: 0;
   font-size: 1.6em;
   color: #aac;
 }
-.radicals-table .td {
+.radical-table .td {
+  display: inline-block;
   width: 4em;
   min-height: 4em;
   margin: 0 0 1.5em 1.25em;
@@ -102,9 +103,9 @@ main {
   color: #335;
   text-decoration: none;
 }
-.radicals-table .td:hover,
-.radicals-table .td:active,
-.radicals-table .td:focus {
+.radical-table .td:hover,
+.radical-table .td:active,
+.radical-table .td:focus {
   background-color: cornflowerblue;
   background-color: rgba(100, 149, 237, 0.2);
 }

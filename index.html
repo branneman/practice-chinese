@@ -2,25 +2,43 @@
 <html>
 <head>
   <meta charset="utf8">
-  <title>random-radical-rehearsal-robot</title>
+  <title>练习中文</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&amp;display=swap"> 
   <link rel="stylesheet" href="./static/app.css">
 </head>
 <body>
-  <nav class="nav">
-    <a class="nav__table active" href="#table">几 Radical Table</a>
-    <a class="nav__random" href="#random">↻ Random Radical</a>
-  </nav>
+
   <main>
-    <section class="layout__table">
-      <div class="radicals-table"></div>
+
+    <nav class="section section--nav nav">
+      <!--<a class="nav__menu" href="#">快速导航</a>-->
+      <a class="nav__radical-table" href="#radical-table">康熙部首表</a>
+      <a class="nav__radical-random" href="#radical-random">随机部首</a>
+      <a class="nav__pinyin-table" href="#pinyin-table">拼音表</a>
+      <a class="nav__pinyin-random" href="#pinyin-random">随机拼音</a>
+    </nav>
+
+    <section class="section section--radical-table hidden">
+      <div class="radical-table"></div>
     </section>
-    <section class="layout__random hidden">
-      Not yet implemented.
+
+    <section class="section section--radical-random hidden">
+      随机部首: Not yet implemented.
     </section>
+
+    <section class="section section--pinyin-table hidden">
+      拼音表: Not yet implemented.
+    </section>
+
+    <section class="section section--pinyin-random hidden">
+      随机拼音: Not yet implemented.
+    </section>
+
   </main>
+
   <script src="./static/radicals.json.js"></script>
   <script src="./static/app.js"></script>
+
 </body>
 </html>
