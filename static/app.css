@@ -1,3 +1,6 @@
+/**
+ * Generic
+ */
 html {
   box-sizing: border-box;
 }
@@ -9,10 +12,18 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Noto Serif SC', serif;
   color: #335;
 }
+a {
+  color: cornflowerblue;
+}
+.hidden {
+  display: none;
+}
 
+/**
+ * Typography
+ */
 body {
   font-size: 16px;
 }
@@ -37,20 +48,16 @@ body {
   }
 }
 
-a {
-  color: cornflowerblue;
-}
-.hidden {
-  display: none;
-}
-
+/**
+ * Nav
+ */
 .nav {
   padding: 1em;
 }
 .nav a {
   display: block;
   max-width: 6.5em;
-  margin: 1em auto 0;
+  margin: 1em 0 0;
   border: 0.07em solid cornflowerblue;
   border-radius: 0.4em;
   box-shadow: 0.1em 0.1em 0.1em -0.05em cornflowerblue;
@@ -70,12 +77,60 @@ a {
   color: #fff;
 }
 
+/**
+ * Logo
+ */
+.logo {
+  display: flex;
+  margin: 1em 3em 0 0;
+  font-size: 0.38em;
+}
+.nav__logo.logo {
+  margin: 0;
+  font-size: 1em;
+}
+.logo a {
+  display: flex;
+  text-decoration: none;
+}
+.logo__svg {
+  width: 4em;
+  height: 4em;
+}
+.logo__title {
+  margin: 0 0 0 0.5em;
+  padding-top: 0.2em;
+  color: #000;
+  font-size: 1.2em;
+  font-family: sans-serif;
+  font-weight: normal;
+  line-height: 1.6;
+}
+.logo__title span {
+  /* because div is not allowed in h1 */
+  display: block;
+}
+
+/**
+ * Layout
+ */
 main {
   min-height: 100vh;
   margin: 0 auto;
   padding: 1em 1em 0 1em;
 }
+.section__header {
+  display: flex;
+  margin-bottom: 1em;
+}
+.section__title {
+  margin: 0;
+  font-weight: normal;
+}
 
+/**
+ * Radical table
+ */
 .radical-table .tr {
   position: relative;
   border-top: 0.07em solid #aac;

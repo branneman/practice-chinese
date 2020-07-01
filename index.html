@@ -1,11 +1,10 @@
 <!doctype html>
 <html lang="zh">
 <head>
-  <meta charset="utf8">
-  <title>Practice Chinese</title>
+  <meta charset="utf-8">
+  <title lang="en">Practice Chinese</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&amp;display=swap"> 
   <link rel="stylesheet" href="./static/app.css">
 
   <link rel="apple-touch-icon" sizes="180x180" href="./static/favicon/apple-touch-icon.png">
@@ -23,7 +22,10 @@
   <main>
 
     <nav class="section section--nav nav">
-      <!--<a class="nav__menu" href="#">快速导航</a>-->
+      <figure class="nav__logo logo logo--home">
+        <img class="logo__svg" alt="练习中文" src="./static/img/logo.svg">
+        <h1 class="logo__title" lang="en"><span>Practice</span> <span>Chinese</span></h1>
+      </figure>
       <a class="nav__radical-table" href="#radical-table">康熙部首表</a>
       <a class="nav__radical-random" href="#radical-random">随机部首</a>
       <a class="nav__pinyin-table" href="#pinyin-table">拼音表</a>
@@ -31,19 +33,55 @@
     </nav>
 
     <section class="section section--radical-table hidden">
+      <header class="section__header">
+        <figure class="logo">
+          <a href="#">
+            <img class="logo__svg" alt="练习中文" src="./static/img/logo.svg">
+            <h1 class="logo__title" lang="en"><span>Practice</span> <span>Chinese</span></h1>
+          </a>
+        </figure>
+        <h1 class="section__title">康熙部首表</h1>
+      </header>
       <div class="radical-table"></div>
     </section>
 
     <section class="section section--radical-random hidden">
-      随机部首: Not yet implemented.
+      <header class="section__header">
+        <figure class="logo">
+          <a href="#">
+            <img class="logo__svg" alt="练习中文" src="./static/img/logo.svg">
+            <h1 class="logo__title" lang="en"><span>Practice</span> <span>Chinese</span></h1>
+          </a>
+        </figure>
+        <h1 class="section__title">随机部首</h1>
+      </header>
+      <div lang="en">Not yet implemented.</div>
     </section>
 
     <section class="section section--pinyin-table hidden">
-      拼音表: Not yet implemented.
+      <header class="section__header">
+        <figure class="logo">
+          <a href="#">
+            <img class="logo__svg" alt="练习中文" src="./static/img/logo.svg">
+            <h1 class="logo__title" lang="en"><span>Practice</span> <span>Chinese</span></h1>
+          </a>
+        </figure>
+        <h1 class="section__title">拼音表</h1>
+      </header>
+      <div lang="en">Not yet implemented.</div>
     </section>
 
     <section class="section section--pinyin-random hidden">
-      随机拼音: Not yet implemented.
+      <header class="section__header">
+        <figure class="logo">
+          <a href="#">
+            <img class="logo__svg" alt="练习中文" src="./static/img/logo.svg">
+            <h1 class="logo__title" lang="en"><span>Practice</span> <span>Chinese</span></h1>
+          </a>
+        </figure>
+        <h1 class="section__title">随机拼音</h1>
+      </header>
+      <div lang="en">Not yet implemented.</div>
     </section>
 
   </main>
