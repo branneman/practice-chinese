@@ -19,7 +19,7 @@ var __pinyin_initials = {
   r: `**r** is pronounced with the tongue curled back as for **l** in "**l**ove", but with the tip of the tongue not touching the roof of the mouth`,
   z: `**z** is pronounced like **ds** as in "bea**ds**"`,
   c: `**c** is pronounced like **ts** as in "boo**ts**"`,
-  s: `**s** is pronounced like **s** as in "**s**ong", but is pronounced more strongly than in English`
+  s: `**s** is pronounced like **s** as in "**s**ong", but is pronounced more strongly than in English`,
 }
 
 var __pinyin_finals = {
@@ -58,10 +58,13 @@ var __pinyin_finals = {
   uo: `**uo** is pronounced like **w** as in "**w**et"; followed by a sound pronounced somewhat like **o** as in "l**o**t", but with the mouth not as wide open`,
   ü: `**ü** is pronounced like as **y** in "**y**es", followed by the pronunciation of **oo** as in "f**oo**d"`,
   üan: `pronounce ü first, then followed by the pronunciation of **an** in "f**an**"`,
-  ün: `pronounce ü first, then gradually lower your tongue to the position of pronouncing e`
+  ün: `pronounce ü first, then gradually lower your tongue to the position of pronouncing e`,
 }
 
-// When initial = ai and final is d, then: __pinyin.d.ai => { name: str, initial: str, final: str, tones: int[] }
+// When initial = ai and final is d, then:
+//  __pinyin.d.ai
+//   =>
+//  { name: str, initial: str, final: str, tones: int[] }
 var __pinyin = {
   _: {
     a: {},
@@ -75,14 +78,14 @@ var __pinyin = {
     er: {
       name: 'er',
       final: 'er',
-      tones: [2, 3, 4]
+      tones: [2, 3, 4],
     },
     i: {},
     ia: {
       name: 'ya',
       initial: 'y',
       final: 'a',
-      tones: [1, 2, 3, 4, 5]
+      tones: [1, 2, 3, 4, 5],
     },
     ian: {},
     iang: {},
@@ -94,7 +97,7 @@ var __pinyin = {
       name: 'yo',
       initial: 'i',
       final: 'o',
-      tones: [1]
+      tones: [1],
     },
     iong: {},
     iu: {},
@@ -109,7 +112,7 @@ var __pinyin = {
       name: 'wang',
       initial: 'w',
       final: 'ang',
-      tones: [1, 2, 3, 4]
+      tones: [1, 2, 3, 4],
     },
     ue: {},
     ui: {},
@@ -117,7 +120,7 @@ var __pinyin = {
     uo: {},
     ü: {},
     üan: {},
-    ün: {}
+    ün: {},
   },
   b: {
     a: {},
@@ -135,7 +138,7 @@ var __pinyin = {
     in: {},
     ing: {},
     o: {},
-    u: {}
+    u: {},
   },
   p: {
     a: {},
@@ -154,7 +157,7 @@ var __pinyin = {
     ing: {},
     o: {},
     ou: {},
-    u: {}
+    u: {},
   },
   m: {
     a: {},
@@ -175,7 +178,7 @@ var __pinyin = {
     iu: {},
     o: {},
     ou: {},
-    u: {}
+    u: {},
   },
   f: {
     a: {},
@@ -186,7 +189,7 @@ var __pinyin = {
     eng: {},
     o: {},
     ou: {},
-    u: {}
+    u: {},
   },
   d: {
     a: {},
@@ -211,7 +214,7 @@ var __pinyin = {
     uan: {},
     ui: {},
     un: {},
-    uo: {}
+    uo: {},
   },
   t: {
     a: {},
@@ -233,7 +236,7 @@ var __pinyin = {
     ue: {},
     ui: {},
     un: {},
-    uo: {}
+    uo: {},
   },
   n: {
     a: {},
@@ -259,7 +262,7 @@ var __pinyin = {
     uan: {},
     ue: {},
     uo: {},
-    ü: {}
+    ü: {},
   },
   l: {
     a: {},
@@ -287,7 +290,7 @@ var __pinyin = {
     ue: {},
     un: {},
     uo: {},
-    ü: {}
+    ü: {},
   },
   g: {
     a: {},
@@ -306,7 +309,7 @@ var __pinyin = {
     uan: {},
     ui: {},
     un: {},
-    uo: {}
+    uo: {},
   },
   k: {
     a: {},
@@ -325,7 +328,7 @@ var __pinyin = {
     uan: {},
     ui: {},
     un: {},
-    uo: {}
+    uo: {},
   },
   h: {
     a: {},
@@ -345,7 +348,7 @@ var __pinyin = {
     uan: {},
     ui: {},
     un: {},
-    uo: {}
+    uo: {},
   },
   j: {
     i: {},
@@ -361,7 +364,7 @@ var __pinyin = {
     ue: {},
     ü: {},
     üan: {},
-    ün: {}
+    ün: {},
   },
   q: {
     i: {},
@@ -377,7 +380,7 @@ var __pinyin = {
     ue: {},
     ü: {},
     üan: {},
-    ün: {}
+    ün: {},
   },
   x: {
     i: {},
@@ -393,7 +396,7 @@ var __pinyin = {
     ue: {},
     ü: {},
     üan: {},
-    ün: {}
+    ün: {},
   },
   zh: {
     a: {},
@@ -413,7 +416,7 @@ var __pinyin = {
     uang: {},
     ui: {},
     un: {},
-    uo: {}
+    uo: {},
   },
   ch: {
     a: {},
@@ -433,7 +436,7 @@ var __pinyin = {
     uang: {},
     ui: {},
     un: {},
-    uo: {}
+    uo: {},
   },
   sh: {
     a: {},
@@ -454,7 +457,7 @@ var __pinyin = {
     uang: {},
     ui: {},
     un: {},
-    uo: {}
+    uo: {},
   },
   r: {
     an: {},
@@ -470,7 +473,7 @@ var __pinyin = {
     uan: {},
     ui: {},
     un: {},
-    uo: {}
+    uo: {},
   },
   z: {
     a: {},
@@ -489,7 +492,7 @@ var __pinyin = {
     uan: {},
     ui: {},
     un: {},
-    uo: {}
+    uo: {},
   },
   c: {
     a: {},
@@ -507,7 +510,7 @@ var __pinyin = {
     uan: {},
     ui: {},
     un: {},
-    uo: {}
+    uo: {},
   },
   s: {
     a: {},
@@ -525,6 +528,6 @@ var __pinyin = {
     uan: {},
     ui: {},
     un: {},
-    uo: {}
-  }
+    uo: {},
+  },
 }
