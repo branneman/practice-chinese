@@ -1,0 +1,29 @@
+.navigation__menu {
+  margin: 0;
+  padding: 0;
+
+  > li {
+    list-style: none;
+  }
+
+  > li a {
+    display: block;
+    padding-top: 1em;
+    padding-right: 2em;
+    padding-bottom: 1em;
+    font-weight: 500;
+    text-decoration: none;
+
+    &:hover {
+      background: lightskyblue;
+    }
+  }
+
+  &--indent0 > li a {
+    padding-left: 2rem;
+  }
+  &--indent1 > li a {
+    padding-left: 3rem;
+    font-size: 90%;
+  }
+}

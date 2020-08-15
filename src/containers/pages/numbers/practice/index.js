@@ -1,11 +1,10 @@
 import React, { useEffect, useRef, useState } from 'react'
 
-import { weightedRandomInt } from '../../../../util/random'
-import arabic2chinese from './arabic2chinese'
-
-import Header from '../../../../presenters/molecules/header'
+import { weightedRandomInt } from '../../../../utils/random'
+import arabic2chinese from '../../../../utils/arabic2chinese'
 
 const ENTER_KEY = 13
+
 const getSemiRandomInt = () =>
   weightedRandomInt([
     { weight: 3, min: 0, max: 99 },
@@ -13,8 +12,7 @@ const getSemiRandomInt = () =>
     { weight: 1, min: -999, max: -1 },
   ])
 
-function RandomNumberPage() {
-  console.log(Array(20).fill(0).map(getSemiRandomInt))
+export default function NumbersPracticePage() {
   const [state, setState] = useState('start')
 
   const answerRef = useRef(null)
@@ -89,16 +87,13 @@ function RandomNumberPage() {
 
   return (
     <section className="section section--numbers-random">
-      <Header />
       {renderedState}
       <div style={{ fontSize: '16px' }}>
         <p>Answers:</p>
         <pre>
-          <code>{JSON.stringify(answers.reverse(), 0, 2)}</code>
+          <code>{JSON.stringify(answers.slice().reverse(), 0, 2)}</code>
         </pre>
       </div>
     </section>
   )
 }
-
-export default RandomNumberPage

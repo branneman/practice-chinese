@@ -1,0 +1,34 @@
+.logo__parent {
+  text-decoration: none;
+}
+
+.logo {
+  display: flex;
+  margin: 1em 3em 1em 1.5em;
+  font-size: 1em;
+
+  .logo__svg {
+    width: 2.5em;
+    height: 2.5em;
+    font-family: sans-serif;
+    font-size: 1.8em;
+    line-height: 1;
+    word-break: break-all;
+    text-align: center;
+    vertical-align: top;
+  }
+
+  .logo__title {
+    margin: 0 0 0 0.5em;
+    padding-top: 0.2em;
+    color: #000;
+    font-size: 1.3em;
+    font-family: sans-serif;
+    font-weight: normal;
+    line-height: 1.6;
+  }
+
+  .logo__title span {
+    display: block;
+  }
+}
