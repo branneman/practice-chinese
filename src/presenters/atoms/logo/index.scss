@@ -1,11 +1,15 @@
 .logo__parent {
+  position: absolute;
+  z-index: 3;
+  display: block;
+  padding: 0.5em;
   text-decoration: none;
 }
 
 .logo {
   display: flex;
-  margin: 1em 3em 1em 1.5em;
-  font-size: 1em;
+  margin: 0;
+  font-size: 0.65em;
 
   .logo__svg {
     width: 2.5em;

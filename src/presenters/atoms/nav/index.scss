@@ -1,4 +1,48 @@
-.navigation__menu {
+.nav {
+  position: relative;
+
+  &__toggle {
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    right: 0;
+    width: 1.35em;
+    height: 1.35em;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    background: transparent;
+    font-size: 3em;
+    line-height: 1;
+    vertical-align: top;
+    cursor: pointer;
+
+    & span {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    &--open span {
+      top: 0.1em;
+      left: 0.4em;
+    }
+    &--close span {
+      top: 0.125em;
+      left: 0.275em;
+    }
+  }
+
+  &__menu {
+    position: absolute;
+    top: 4em;
+    z-index: 2;
+    width: 100vw;
+    height: 100vh;
+    background: white;
+  }
+}
+
+.menu {
   margin: 0;
   padding: 0;
 
