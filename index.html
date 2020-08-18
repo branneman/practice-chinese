@@ -26,10 +26,10 @@
         <img class="logo__svg" alt="练习中文" src="./static/img/logo.svg">
         <h1 class="logo__title" lang="en"><span>Practice</span> <span>Chinese</span></h1>
       </figure>
-      <a class="nav__radical-table" href="#radical-table">康熙部首表</a>
-      <a class="nav__radical-random" href="#radical-random">随机部首</a>
-      <a class="nav__pinyin-table" href="#pinyin-table">拼音表</a>
-      <a class="nav__pinyin-random" href="#pinyin-random">随机拼音</a>
+      <a class="nav__radical-table button" href="#radical-table">部首</a>
+      <a class="nav__radical-random button" href="#radical-random">随机部首</a>
+      <a class="nav__pinyin-table button" href="#pinyin-table">拼音</a>
+      <a class="nav__pinyin-random button" href="#pinyin-random">随机拼音</a>
     </nav>
 
     <section class="section section--radical-table hidden">
@@ -40,7 +40,7 @@
             <h1 class="logo__title" lang="en"><span>Practice</span> <span>Chinese</span></h1>
           </a>
         </figure>
-        <h1 class="section__title">康熙部首表</h1>
+        <h1 class="section__title">部首</h1>
       </header>
       <div class="radical-table"></div>
     </section>
@@ -55,7 +55,10 @@
         </figure>
         <h1 class="section__title">随机部首</h1>
       </header>
-      <div lang="en">Not yet implemented.</div>
+      <div class="radical-random">
+        <div class="radical-block"></div>
+        <a class="refresh button" href="#radical-random">刷新</a>
+      </div>
     </section>
 
     <section class="section section--pinyin-table hidden">
@@ -66,7 +69,7 @@
             <h1 class="logo__title" lang="en"><span>Practice</span> <span>Chinese</span></h1>
           </a>
         </figure>
-        <h1 class="section__title">拼音表</h1>
+        <h1 class="section__title">拼音</h1>
       </header>
       <div lang="en">Not yet implemented.</div>
     </section>

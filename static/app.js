@@ -7,7 +7,8 @@ function domContentLoaded() {
   if (!__radicals) throw new Error('__radicals not defined')
 
   cacheElements()
-  populateTable(elem.table, groupRadicals(__radicals))
+  populateRadicalTable(elem.radicalTable, groupRadicals(__radicals))
+  generateRadicalRandom()
   addEventListeners()
 
   switchPage(location.hash.substr(1))
@@ -25,7 +26,11 @@ function cacheElements() {
   elem.sectionPinyinTable = qs('.section--pinyin-table')
   elem.sectionPinyinRandom = qs('.section--pinyin-random')
 
-  elem.table = qs('.section--radical-table .radical-table')
+  elem.radicalTable = qs('.section--radical-table .radical-table')
+
+  elem.radicalRandom = qs('.section--radical-random .radical-random')
+  elem.radicalRandomBlock = qs('.radical-block', elem.radicalRandom)
+  elem.radicalRandomRefresh = qs('.refresh', elem.radicalRandom)
 }
 
 function switchPage(page) {
@@ -54,35 +59,52 @@ function addEventListeners() {
   window.addEventListener('hashchange', () =>
     switchPage(location.hash.substr(1))
   )
+  elem.radicalRandomRefresh.addEventListener('click', () => {
+    generateRadicalRandom()
+  })
 }
 
-function populateTable(table, radicals) {
+function populateRadicalTable(table, radicals2d) {
   var tbody = doc.createElement('div')
 
-  Object.entries(radicals).forEach(([strokeCount, r]) => {
+  Object.entries(radicals2d).forEach(([strokeCount, radicals1d]) => {
     var tr = addClass(doc.createElement('div'), 'tr')
-
     tr.appendChild(addClass(createTextElement('div', strokeCount), 'th'))
 
-    r.forEach((r) => {
-      var td = addClass(doc.createElement('a'), 'td')
-      td.setAttribute('href', '#')
-      td.appendChild(addClass(createTextElement('div', r.pinyin1), 'pinyin'))
-      td.appendChild(addClass(createTextElement('div', r.radical), 'radical'))
-      td.appendChild(addClass(createTextElement('div', r.english), 'english'))
-      tr.appendChild(td)
-
-      td.addEventListener('click', (e) => {
-        e.preventDefault()
-        var audio = new Audio('./static/audio/' + r.pinyin2 + '.mp3')
-        audio.addEventListener('canplaythrough', () => audio.play())
-      })
+    radicals1d.forEach((radical) => {
+      tr.appendChild(generateRadicalBlock(radical, 'td radical-block'))
     })
 
     tbody.appendChild(tr)
   })
 
   table.appendChild(tbody)
+}
+
+function generateRadicalBlock(radical, cl) {
+  var a = addClass(doc.createElement('a'), cl)
+
+  a.setAttribute('href', '#')
+  a.appendChild(addClass(createTextElement('div', radical.pinyin1), 'pinyin'))
+  a.appendChild(addClass(createTextElement('div', radical.radical), 'radical'))
+  a.appendChild(addClass(createTextElement('div', radical.english), 'english'))
+
+  a.addEventListener('click', (evt) => {
+    evt.preventDefault()
+    var audio = new Audio('./static/audio/' + radical.pinyin2 + '.mp3')
+    audio.addEventListener('canplaythrough', () => audio.play())
+  })
+
+  return a
+}
+
+function generateRadicalRandom() {
+  var i = randomInt(0, __radicals.length - 1)
+  var r = __radicals[i]
+
+  var e = generateRadicalBlock(r, 'radical-block')
+  elem.radicalRandom.replaceChild(e, elem.radicalRandomBlock)
+  elem.radicalRandomBlock = e
 }
 
 function groupRadicals(radicals) {
@@ -101,6 +123,10 @@ function createTextElement(tag, text) {
 }
 
 function addClass(e, cl) {
-  e.classList.add(cl)
+  cl.split(' ').forEach((c) => e.classList.add(c))
   return e
+}
+
+function randomInt(min, max) {
+  return min + Math.round(Math.random() * (max - min))
 }

@@ -49,14 +49,10 @@ body {
 }
 
 /**
- * Nav
+ * Button
  */
-.nav {
-  padding: 1em;
-}
-.nav a {
+a.button {
   display: block;
-  max-width: 6.5em;
   margin: 1em 0 0;
   border: 0.07em solid cornflowerblue;
   border-radius: 0.4em;
@@ -64,6 +60,16 @@ body {
   padding: 0.2em 0.5em 0.3em;
   text-align: center;
   text-decoration: none;
+}
+
+/**
+ * Nav
+ */
+.nav {
+  padding: 1em;
+}
+.nav a {
+  max-width: 6.5em;
   font-size: 1.6em;
 }
 .nav a:first-child {
@@ -129,30 +135,13 @@ main {
 }
 
 /**
- * Radical table
+ * Radical block
  */
-.radical-table .tr {
-  position: relative;
-  border-top: 0.07em solid #aac;
-  padding: 1em 0 1em 2em;
-}
-.radical-table .th,
-.radical-table .td {
-  display: inline-block;
-  vertical-align: top;
-}
-.radical-table .th {
-  position: absolute;
-  top: 1em;
-  left: 0;
-  font-size: 1.6em;
-  color: #aac;
-}
-.radical-table .td {
+.radical-block {
   display: inline-block;
   width: 4em;
   min-height: 4em;
-  margin: 0 0 1.5em 1.25em;
+
   border-radius: 0.2em;
   cursor: pointer;
   color: #335;
@@ -185,4 +174,45 @@ main {
 }
 .english {
   margin-bottom: 0.3em;
+}
+
+/**
+ * Radical table
+ */
+.radical-table .tr {
+  position: relative;
+  border-top: 0.07em solid #aac;
+  padding: 1em 0 1em 2em;
+}
+.radical-table .th,
+.radical-table .td {
+  display: inline-block;
+  vertical-align: top;
+}
+.radical-table .th {
+  position: absolute;
+  top: 1em;
+  left: 0;
+  font-size: 1.6em;
+  color: #aac;
+}
+.radical-table .td {
+  margin: 0 0 1.5em 1.25em;
+}
+
+/**
+ * Radical random
+ */
+.radical-random {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 0.07em solid #aac;
+  padding-top: 1em;
+}
+.radical-random .radical-block {
+  font-size: 3em;
+}
+.radical-random .button {
+  display: inline-block;
 }
