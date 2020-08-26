@@ -14,21 +14,15 @@ export default [
       {
         path: '/numbers/practice',
         component: NumbersPractice,
-        name: 'Practice',
-      },
-    ],
+        name: 'Practice'
+      }
+    ]
   },
 
-  // Must be second to last (matches /)
   {
     path: '/',
-    component: Home,
-    name: 'Home',
-  },
-
-  // Must be last (failed to match anything)
-  {
-    component: NotFound,
-    name: '404 Not Found',
-  },
+    component: ({ location }) =>
+      location.pathname === '/' ? Home() : NotFound(),
+    name: 'Home'
+  }
 ]
