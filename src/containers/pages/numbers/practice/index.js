@@ -3,13 +3,15 @@ import React, { useEffect, useRef, useState } from 'react'
 import { weightedRandomInt } from '../../../../utils/random'
 import arabic2chinese from '../../../../utils/arabic2chinese'
 
+import './index.scss'
+
 const ENTER_KEY = 13
 
 const getSemiRandomInt = () =>
   weightedRandomInt([
     { weight: 3, min: 0, max: 99 },
     { weight: 2, min: 0, max: 999 },
-    { weight: 1, min: -999, max: -1 },
+    { weight: 1, min: -999, max: -1 }
   ])
 
 export default function NumbersPracticePage() {
@@ -40,60 +42,57 @@ export default function NumbersPracticePage() {
   })
 
   let nextAction
-  let renderedState
   switch (state) {
     case 'question':
-      nextAction = () => checkAnswer(int)
       const int = getSemiRandomInt()
-      renderedState = (
-        <div>
-          <p>{int}</p>
-          <input ref={answerRef} type="text" />
-          <button onClick={nextAction}>Check</button>
-        </div>
+      nextAction = () => checkAnswer(int)
+      return (
+        <section className="section section--numbers-practice">
+          <p className="assignment-description">Translate to Chinese</p>
+          <p className="assignment-text">{int}</p>
+          <input ref={answerRef} className="practice-input" type="text" />
+          <button className="cta--next" onClick={nextAction}>
+            Check
+          </button>
+        </section>
       )
-      break
 
     case 'correct':
       nextAction = () => setState('question')
-      renderedState = (
-        <div>
-          <p>Correct!</p>
-          <button onClick={nextAction}>Continue</button>
-        </div>
+      return (
+        <section className="section section--correct section--numbers-practice">
+          <p className="assignment-result">Correct!</p>
+          <button className="cta--next" onClick={nextAction}>
+            Continue
+          </button>
+        </section>
       )
-      break
 
     case 'incorrect':
       nextAction = () => setState('question')
-      renderedState = (
-        <div>
-          <p>Incorrect!</p>
-          <button onClick={nextAction}>Continue</button>
-        </div>
+      return (
+        <section className="section section--incorrect section--numbers-practice">
+          <p className="assignment-result">Incorrect!</p>
+          {answers[answers.length - 1] && (
+            <p className="assignment-description">
+              Correct answer: {answers[answers.length - 1].correct}
+            </p>
+          )}
+          <button className="cta--next" onClick={nextAction}>
+            Continue
+          </button>
+        </section>
       )
-      break
 
     default:
     case 'start':
       nextAction = () => setState('question')
-      renderedState = (
-        <div>
-          <button onClick={nextAction}>Start</button>
-        </div>
+      return (
+        <section className="section section--numbers-practice">
+          <button className="cta--next" onClick={nextAction}>
+            Start
+          </button>
+        </section>
       )
-      break
   }
-
-  return (
-    <section className="section section--numbers-random">
-      {renderedState}
-      <div style={{ fontSize: '16px' }}>
-        <p>Answers:</p>
-        <pre>
-          <code>{JSON.stringify(answers.slice().reverse(), 0, 2)}</code>
-        </pre>
-      </div>
-    </section>
-  )
 }

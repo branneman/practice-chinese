@@ -13,7 +13,8 @@ export default [
     routes: [
       {
         path: '/numbers/practice',
-        component: NumbersPractice,
+        component: (props) =>
+          props.match.isExact ? NumbersPractice(props) : NotFound(props),
         name: 'Practice'
       }
     ]
@@ -21,8 +22,7 @@ export default [
 
   {
     path: '/',
-    component: ({ location }) =>
-      location.pathname === '/' ? Home() : NotFound(),
+    component: (props) => (props.match.isExact ? Home(props) : NotFound(props)),
     name: 'Home'
   }
 ]

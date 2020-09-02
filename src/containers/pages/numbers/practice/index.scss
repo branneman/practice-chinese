@@ -1,0 +1,70 @@
+@keyframes correct-fadeout {
+  from {
+    background-color: lightgreen;
+  }
+  to {
+    background-color: transparent;
+  }
+}
+@keyframes incorrect-fadeout {
+  from {
+    background-color: tomato;
+  }
+  to {
+    background-color: transparent;
+  }
+}
+
+.section {
+  &--correct {
+    animation: 0.5s correct-fadeout;
+  }
+  &--incorrect {
+    animation: 0.5s incorrect-fadeout;
+  }
+
+  &--numbers-practice {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding-top: 2em;
+  }
+}
+
+.assignment-description {
+  margin-bottom: 2em;
+  text-align: center;
+}
+.assignment-result {
+  margin-top: 2em;
+  font-size: 2em;
+  text-align: center;
+}
+.assignment-text {
+  font-size: 3em;
+  text-align: center;
+}
+
+.practice-input {
+  width: 100%;
+  padding: 0.5em 0.3em;
+  font-size: 1.2em;
+}
+
+.cta--next {
+  position: absolute;
+  bottom: 0;
+
+  display: block;
+  width: 100%;
+  margin: 0;
+  border: 0;
+  padding: 0.5em;
+
+  font-size: 1.4em;
+  font-weight: bold;
+  color: #fff;
+  background: forestgreen;
+  text-transform: uppercase;
+  cursor: pointer;
+}
