@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { BrowserRouter as Router } from 'react-router-dom'
+import { HashRouter as Router } from 'react-router-dom'
 import RenderRoute from '../../utils/render-route'
 import pkg from '../../../package.json'
 import routes from './routes.js'
