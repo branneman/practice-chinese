@@ -1,1 +1,1 @@
-[https://branneman.github.io/practice-chinese/](https://branneman.github.io/practice-chinese/)
+[https://zhongwen.bran.name/](https://zhongwen.bran.name/)
