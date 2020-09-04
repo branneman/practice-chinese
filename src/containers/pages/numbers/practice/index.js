@@ -50,7 +50,12 @@ export default function NumbersPracticePage() {
         <section className="section section--numbers-practice">
           <p className="assignment-description">Translate to Chinese</p>
           <p className="assignment-text">{int}</p>
-          <input ref={answerRef} className="practice-input" type="text" />
+          <input
+            ref={answerRef}
+            className="practice-input"
+            type="text"
+            lang="zh"
+          />
           <button className="cta--next" onClick={nextAction}>
             Check
           </button>
