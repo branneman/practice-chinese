@@ -1,0 +1,29 @@
+name: build + deploy
+
+on:
+  push:
+    branches:
+      - develop
+
+jobs:
+  build-and-deploy:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: clone
+        uses: actions/checkout@v2
+        with:
+          persist-credentials: false
+
+      - name: build
+        run: |
+          npm ci
+          npm run build
+
+      - name: deploy
+        uses: JamesIves/github-pages-deploy-action@3.5.9
+        with:
+          GITHUB_TOKEN: ${{ secrets.DEPLOY_SECRET_TOKEN }}
+          BRANCH: gh-pages
+          FOLDER: build
