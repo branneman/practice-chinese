@@ -54,7 +54,7 @@ export default function NumbersPracticePage() {
             ref={answerRef}
             className="practice-input"
             type="text"
-            lang="zh"
+            lang="zh-Hans"
           />
           <button className="cta--next" onClick={nextAction}>
             Check
