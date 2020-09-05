@@ -63,7 +63,9 @@ export default function HskPage() {
       return (
         <section className="section section--hsk-practice">
           <p className="assignment-description">Translate to Chinese</p>
-          <p className="assignment-text">{answers[question].english}</p>
+          <p className="assignment-text">
+            {answers[question].english.join(', ')}
+          </p>
           <input ref={answerRef} className="practice-input" type="text" />
           <button className="cta--next" onClick={nextAction}>
             Check
@@ -90,7 +92,8 @@ export default function HskPage() {
           <p className="assignment-result">Incorrect!</p>
           {answers[answers.length - 1] && (
             <p className="assignment-description">
-              Correct answer: {answers[answers.length - 1].correct}
+              Correct answer: {answers[question].word} (
+              {answers[question].pinyin1})
             </p>
           )}
           <button className="cta--next" onClick={nextAction}>

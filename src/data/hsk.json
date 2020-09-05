@@ -1,5 +1,646 @@
 [
-  { "word": "一", "pinyin1": "yī", "pinyin2": "yi1", "english": "one" },
-  { "word": "二", "pinyin1": "èr", "pinyin2": "er4", "english": "two" },
-  { "word": "三", "pinyin1": "sān", "pinyin2": "san1", "english": "three" }
+  { "word": "八", "pinyin1": "bā", "english": ["8", "eight"] },
+  { "word": "爸爸", "pinyin1": "bàba", "english": ["father"] },
+  { "word": "杯子", "pinyin1": "bēizi", "english": ["cup", "glass"] },
+  { "word": "北京", "pinyin1": "běijīng", "english": ["Beijing"] },
+  {
+    "word": "本",
+    "pinyin1": "běn",
+    "english": [
+      "roots or stems of plants",
+      "origin",
+      "source",
+      "this",
+      "the current",
+      "root",
+      "foundation",
+      "basis"
+    ]
+  },
+  { "word": "不", "pinyin1": "bù", "english": ["not", "no"] },
+  {
+    "word": "不客气",
+    "pinyin1": "bùkèqi",
+    "english": ["you are welcome", "you're welcome"]
+  },
+  {
+    "word": "菜",
+    "pinyin1": "cài",
+    "english": ["dish", "vegetables", "vegetable", "cuisine"]
+  },
+  { "word": "茶", "pinyin1": "chá", "english": ["tea", "tea plant"] },
+  { "word": "吃", "pinyin1": "chī", "english": ["to eat", "to have one"] },
+  { "word": "出租车", "pinyin1": "chūzūchē", "english": ["taxi"] },
+  {
+    "word": "打电话",
+    "pinyin1": "dǎdiànhuà",
+    "english": ["to make a phone call"]
+  },
+  {
+    "word": "大",
+    "pinyin1": "dà",
+    "english": [
+      "big",
+      "huge",
+      "large",
+      "major",
+      "great",
+      "wide",
+      "deep",
+      "oldest",
+      "eldest"
+    ]
+  },
+  {
+    "word": "的",
+    "pinyin1": "de",
+    "english": ["of"]
+  },
+  {
+    "word": "点",
+    "pinyin1": "diǎn",
+    "english": [
+      "point",
+      "spot",
+      "dot",
+      "speck",
+      "jot",
+      "drop",
+      "stain",
+      "decimal point",
+      "iron bell",
+      "o'clock",
+      "a little",
+      "a bit",
+      "some",
+      "to touch on briefly",
+      "to make clear",
+      "to light",
+      "to ignite",
+      "to kindle",
+      "a drip",
+      "to dibble"
+    ]
+  },
+  { "word": "电脑", "pinyin1": "diànnǎo", "english": ["computer"] },
+  { "word": "电视", "pinyin1": "diànshì", "english": ["television", "TV"] },
+  { "word": "电影", "pinyin1": "diànyǐng", "english": ["movie", "film"] },
+  {
+    "word": "东西",
+    "pinyin1": "dōngxi",
+    "english": ["thing", "stuff", "person"]
+  },
+  { "word": "都", "pinyin1": "dōu", "english": ["all", "both"] },
+  {
+    "word": "读",
+    "pinyin1": "dú",
+    "english": ["to read", "to study"]
+  },
+  {
+    "word": "对不起",
+    "pinyin1": "duìbuqǐ",
+    "english": ["unworthy", "to let down", "I"]
+  },
+  {
+    "word": "多",
+    "pinyin1": "duō",
+    "english": ["many", "much", "a lot of", "numerous", "multi-"]
+  },
+  {
+    "word": "多少",
+    "pinyin1": "duōshǎo",
+    "english": ["number", "amount", "somewhat"]
+  },
+  { "word": "儿子", "pinyin1": "érzi", "english": ["son"] },
+  { "word": "二", "pinyin1": "èr", "english": ["two", "2"] },
+  { "word": "饭馆", "pinyin1": "fànguǎn", "english": ["restaurant"] },
+  { "word": "飞机", "pinyin1": "fēijī", "english": ["airplane", "plane"] },
+  { "word": "分钟", "pinyin1": "fēnzhōng", "english": ["minute"] },
+  {
+    "word": "高兴",
+    "pinyin1": "gāoxìng",
+    "english": ["happy", "glad", "willing", "cheerful"]
+  },
+  {
+    "word": "个",
+    "pinyin1": "gè",
+    "english": ["a", "one", "individual", "this", "that", "size"]
+  },
+  {
+    "word": "工作",
+    "pinyin1": "gōngzuò",
+    "english": ["job", "work", "construction", "task"]
+  },
+  { "word": "狗", "pinyin1": "gǒu", "english": ["dog"] },
+  {
+    "word": "汉语",
+    "pinyin1": "hànyǔ",
+    "english": ["Chinese", "Chinese language"]
+  },
+  {
+    "word": "好",
+    "pinyin1": "hǎo",
+    "english": ["good", "well", "proper", "good to", "easy to", "very", "so"]
+  },
+  {
+    "word": "喝",
+    "pinyin1": "hē",
+    "english": ["drink", "shout", "My goodness!"]
+  },
+  {
+    "word": "和",
+    "pinyin1": "hé",
+    "english": ["and", "with", "sum", "union", "peace", "harmony", "He"]
+  },
+  { "word": "很", "pinyin1": "hěn", "english": ["quite", "very", "awfully"] },
+  {
+    "word": "后面",
+    "pinyin1": "hòumiàn",
+    "english": ["rear", "back", "behind", "later", "afterwards"]
+  },
+  {
+    "word": "回",
+    "pinyin1": "huí",
+    "english": [
+      "to circle",
+      "to go back",
+      "to turn around",
+      "to answer",
+      "to return",
+      "to revolve",
+      "time"
+    ]
+  },
+  {
+    "word": "会",
+    "pinyin1": "huì",
+    "english": [
+      "can",
+      "be possible",
+      "be able to",
+      "will",
+      "be likely to",
+      "be sure to",
+      "to assemble",
+      "to meet",
+      "to gather",
+      "to see",
+      "union",
+      "group",
+      "association"
+    ]
+  },
+  { "word": "火车站", "pinyin1": "huǒchēzhàn", "english": ["train station"] },
+  {
+    "word": "几",
+    "pinyin1": "jǐ",
+    "english": ["how much", "how many", "several", "a few"]
+  },
+  {
+    "word": "家",
+    "pinyin1": "jiā",
+    "english": ["home", "family"]
+  },
+  {
+    "word": "叫",
+    "pinyin1": "jiào",
+    "english": [
+      "call",
+      "to shout",
+      "to call",
+      "to order",
+      "to ask",
+      "to be called",
+      "by"
+    ]
+  },
+  {
+    "word": "今天",
+    "pinyin1": "jīntiān",
+    "english": ["today", "at the present", "now"]
+  },
+  { "word": "九", "pinyin1": "jiǔ", "english": ["nine", "9"] },
+  {
+    "word": "开",
+    "pinyin1": "kāi",
+    "english": [
+      "to open",
+      "to start",
+      "to turn on",
+      "to boil",
+      "to write out (a medical prescription)",
+      "to operate (vehicle)"
+    ]
+  },
+  {
+    "word": "看",
+    "pinyin1": "kān",
+    "english": ["to watch", "to look after", "to take care of", "to guard"]
+  },
+  {
+    "word": "看见",
+    "pinyin1": "kànjiàn",
+    "english": ["to see", "to catch sight of"]
+  },
+  {
+    "word": "块",
+    "pinyin1": "kuài",
+    "english": ["lump", "chunk", "piece"]
+  },
+  {
+    "word": "来",
+    "pinyin1": "lái",
+    "english": ["to come", "to arrive", "to come round", "ever since", "next"]
+  },
+  { "word": "老师", "pinyin1": "lǎoshī", "english": ["teacher"] },
+  { "word": "冷", "pinyin1": "lěng", "english": ["cold"] },
+  {
+    "word": "里",
+    "pinyin1": "lǐ",
+    "english": ["interior", "inside", "internal", "lining"]
+  },
+  {
+    "word": "零",
+    "pinyin1": "líng",
+    "english": [
+      "0",
+      "zero",
+      "nought",
+      "zero sign",
+      "fractional",
+      "fragmentary",
+      "odd",
+      "fraction",
+      "remainder",
+      "extra",
+      "to wither and fall",
+      "to wither"
+    ]
+  },
+  { "word": "六", "pinyin1": "liù", "english": ["six", "6"] },
+  { "word": "妈妈", "pinyin1": "māma", "english": ["mama", "mommy", "mother"] },
+  { "word": "吗", "pinyin1": "ma", "english": ["?"] },
+  { "word": "买", "pinyin1": "mǎi", "english": ["to buy", "to purchase"] },
+  { "word": "猫", "pinyin1": "māo", "english": ["cat"] },
+  {
+    "word": "没",
+    "pinyin1": "méi",
+    "english": ["have not", "not"]
+  },
+  {
+    "word": "没关系",
+    "pinyin1": "méiguānxi",
+    "english": ["no worries", "it's ok", "it doesnt matter"]
+  },
+  { "word": "米饭", "pinyin1": "mǐfàn", "english": ["cooked rice"] },
+  { "word": "明天", "pinyin1": "míngtiān", "english": ["tomorrow"] },
+  { "word": "名字", "pinyin1": "míngzi", "english": ["name"] },
+  { "word": "哪", "pinyin1": "nǎ", "english": ["how", "which"] },
+  {
+    "word": "哪儿",
+    "pinyin1": "nǎr",
+    "english": ["where", "wherever", "anywhere"]
+  },
+  { "word": "那", "pinyin1": "nà", "english": ["that", "those", "then"] },
+  { "word": "那儿", "pinyin1": "nàr", "english": ["there"] },
+  {
+    "word": "能",
+    "pinyin1": "néng",
+    "english": [
+      "to be able to",
+      "to be capable of",
+      "ability",
+      "capability",
+      "able",
+      "capable",
+      "can possibly"
+    ]
+  },
+  { "word": "你", "pinyin1": "nǐ", "english": ["you"] },
+  { "word": "年", "pinyin1": "nián", "english": ["year"] },
+  { "word": "女儿", "pinyin1": "nǚér", "english": ["daughter"] },
+  { "word": "朋友", "pinyin1": "péngyou", "english": ["friend"] },
+  {
+    "word": "漂亮",
+    "pinyin1": "piàoliang",
+    "english": ["pretty", "beautiful"]
+  },
+  { "word": "苹果", "pinyin1": "píngguǒ", "english": ["apple"] },
+  { "word": "七", "pinyin1": "qī", "english": ["seven", "7"] },
+  { "word": "钱", "pinyin1": "qián", "english": ["coin", "money"] },
+  {
+    "word": "前面",
+    "pinyin1": "qiánmiàn",
+    "english": ["ahead", "in front", "preceding", "above"]
+  },
+  {
+    "word": "请",
+    "pinyin1": "qǐng",
+    "english": [
+      "to ask",
+      "to invite",
+      "please (do sth)",
+      "to treat (to a meal etc)",
+      "to request"
+    ]
+  },
+  {
+    "word": "去",
+    "pinyin1": "qù",
+    "english": [
+      "to go",
+      "to go to (a place)",
+      "to cause to go or send (sb)",
+      "to remove",
+      "to get rid of",
+      "to be apart from in space or time"
+    ]
+  },
+  {
+    "word": "热",
+    "pinyin1": "rè",
+    "english": ["heat", "to heat up", "fervent", "hot (of weather)", "warm up"]
+  },
+  { "word": "人", "pinyin1": "rén", "english": ["man", "person", "people"] },
+  {
+    "word": "认识",
+    "pinyin1": "rènshi",
+    "english": [
+      "know",
+      "to know",
+      "to recognize",
+      "to be familiar with",
+      "acquainted with sth",
+      "knowledge",
+      "understanding",
+      "awareness",
+      "cognition"
+    ]
+  },
+  { "word": "日", "pinyin1": "rì", "english": ["sun", "day", "date"] },
+  { "word": "三", "pinyin1": "sān", "english": ["three", "3"] },
+  { "word": "商店", "pinyin1": "shāngdiàn", "english": ["store", "shop"] },
+  { "word": "上", "pinyin1": "shàng", "english": ["up", "above", "upward"] },
+  { "word": "上午", "pinyin1": "shàngwǔ", "english": ["morning"] },
+  { "word": "少", "pinyin1": "shǎo", "english": ["few", "little", "lack"] },
+  {
+    "word": "谁",
+    "pinyin1": "shéi",
+    "english": ["who"]
+  },
+  {
+    "word": "什么",
+    "pinyin1": "shénme",
+    "english": ["what", "who", "something", "anything"]
+  },
+  { "word": "十", "pinyin1": "shí", "english": ["ten", "10"] },
+  {
+    "word": "时候",
+    "pinyin1": "shíhòu",
+    "english": ["time", "length of time", "moment", "period"]
+  },
+  {
+    "word": "是",
+    "pinyin1": "shì",
+    "english": ["is", "are", "am", "yes", "to be"]
+  },
+  { "word": "书", "pinyin1": "shū", "english": ["book", "letter"] },
+  {
+    "word": "水",
+    "pinyin1": "shuǐ",
+    "english": [
+      "water",
+      "river",
+      "liquid",
+      "beverage",
+      "additional charges or income"
+    ]
+  },
+  {
+    "word": "睡觉",
+    "pinyin1": "shuìjiào",
+    "english": ["to go to bed", "to go to sleep"]
+  },
+  {
+    "word": "说话",
+    "pinyin1": "shuōhuà",
+    "english": [
+      "to speak",
+      "to say",
+      "to talk",
+      "to gossip",
+      "to tell stories",
+      "talk",
+      "word"
+    ]
+  },
+  { "word": "四", "pinyin1": "sì", "english": ["four", "4"] },
+  { "word": "岁", "pinyin1": "suì", "english": ["year", "years old"] },
+  {
+    "word": "他",
+    "pinyin1": "tā",
+    "english": ["he", "him", "other", "another"]
+  },
+  { "word": "她", "pinyin1": "tā", "english": ["she"] },
+  {
+    "word": "太",
+    "pinyin1": "tài",
+    "english": ["highest", "greatest", "too (much)", "very", "extremely"]
+  },
+  { "word": "天气", "pinyin1": "tiānqì", "english": ["weather"] },
+  {
+    "word": "听",
+    "pinyin1": "tīng",
+    "english": ["to listen", "to hear", "to obey", "a can"]
+  },
+  { "word": "同学", "pinyin1": "tóngxué", "english": ["classmate"] },
+  { "word": "喂", "pinyin1": "wèi", "english": ["hello"] },
+  { "word": "我", "pinyin1": "wǒ", "english": ["I", "me", "my"] },
+  {
+    "word": "我们",
+    "pinyin1": "wǒmen",
+    "english": ["we", "us", "ourselves", "our"]
+  },
+  { "word": "五", "pinyin1": "wǔ", "english": ["five", "5"] },
+  {
+    "word": "喜欢",
+    "pinyin1": "xǐhuan",
+    "english": ["to like", "to be fond of"]
+  },
+  {
+    "word": "下",
+    "pinyin1": "xià",
+    "english": [
+      "down",
+      "downwards",
+      "below",
+      "lower",
+      "later",
+      "next",
+      "second",
+      "to decline",
+      "to go down"
+    ]
+  },
+  { "word": "下午", "pinyin1": "xiàwǔ", "english": ["afternoon", "pm"] },
+  {
+    "word": "下雨",
+    "pinyin1": "xiàyǔ",
+    "english": ["rain", "to rain", "rainy"]
+  },
+  {
+    "word": "先生",
+    "pinyin1": "xiānsheng",
+    "english": ["teacher", "husband", "Mister", "doctor"]
+  },
+  {
+    "word": "现在",
+    "pinyin1": "xiànzài",
+    "english": [
+      "now",
+      "at present",
+      "at the moment",
+      "modern",
+      "current",
+      "nowadays"
+    ]
+  },
+  {
+    "word": "想",
+    "pinyin1": "xiǎng",
+    "english": [
+      "to think",
+      "to believe",
+      "to suppose",
+      "to wish",
+      "to want",
+      "to miss"
+    ]
+  },
+  {
+    "word": "小",
+    "pinyin1": "xiǎo",
+    "english": ["small", "tiny", "few", "young"]
+  },
+  { "word": "小姐", "pinyin1": "xiǎojie", "english": ["young lady", "miss"] },
+  {
+    "word": "些",
+    "pinyin1": "xiē",
+    "english": ["some", "few", "several"]
+  },
+  { "word": "写", "pinyin1": "xiě", "english": ["to write"] },
+  { "word": "谢谢", "pinyin1": "xièxie", "english": ["to thank", "thanks"] },
+  { "word": "星期", "pinyin1": "xīngqī", "english": ["week"] },
+  {
+    "word": "学生",
+    "pinyin1": "xuésheng",
+    "english": ["student", "school child"]
+  },
+  { "word": "学习", "pinyin1": "xuéxí", "english": ["to learn", "to study"] },
+  { "word": "学校", "pinyin1": "xuéxiào", "english": ["school"] },
+  {
+    "word": "一",
+    "pinyin1": "yī",
+    "english": [
+      "one",
+      "1",
+      "single",
+      "a (article)",
+      "as soon as",
+      "entire",
+      "whole",
+      "all",
+      "throughout"
+    ]
+  },
+  { "word": "衣服", "pinyin1": "yīfu", "english": ["clothes"] },
+  { "word": "医生", "pinyin1": "yīshēng", "english": ["doctor"] },
+  { "word": "医院", "pinyin1": "yīyuàn", "english": ["hospital"] },
+  { "word": "椅子", "pinyin1": "yǐzi", "english": ["chair"] },
+  {
+    "word": "有",
+    "pinyin1": "yǒu",
+    "english": ["to have", "there is", "there are", "to exist", "to be"]
+  },
+  { "word": "月", "pinyin1": "yuè", "english": ["moon", "month"] },
+  {
+    "word": "在",
+    "pinyin1": "zài",
+    "english": [
+      "is in",
+      "are in",
+      "located in",
+      "located at",
+      "to exist",
+      "in the middle of doing something"
+    ]
+  },
+  {
+    "word": "再见",
+    "pinyin1": "zàijiàn",
+    "english": ["goodbye", "see you again later"]
+  },
+  { "word": "怎么", "pinyin1": "zěnme", "english": ["how", "what", "why"] },
+  {
+    "word": "怎么样",
+    "pinyin1": "zěnmeyàng",
+    "english": ["how", "how is", "how about", "how was it", "how are things"]
+  },
+  { "word": "这", "pinyin1": "zhè", "english": ["this", "these"] },
+  { "word": "这儿", "pinyin1": "zhèr", "english": ["here"] },
+  {
+    "word": "中国",
+    "pinyin1": "zhōngguó",
+    "english": ["China", "Middle Kingdom"]
+  },
+  { "word": "中午", "pinyin1": "zhōngwǔ", "english": ["noon", "midday"] },
+  {
+    "word": "住",
+    "pinyin1": "zhù",
+    "english": [
+      "live",
+      "to live",
+      "to dwell",
+      "to stay",
+      "to reside",
+      "to stop"
+    ]
+  },
+  { "word": "桌子", "pinyin1": "zhuōzi", "english": ["table", "desk"] },
+  {
+    "word": "字",
+    "pinyin1": "zì",
+    "english": ["letter", "symbol", "character", "word"]
+  },
+  { "word": "昨天", "pinyin1": "zuótiān", "english": ["yesterday"] },
+  {
+    "word": "做",
+    "pinyin1": "zuò",
+    "english": [
+      "do",
+      "to do",
+      "to make",
+      "to produce",
+      "to write",
+      "to compose",
+      "to act as",
+      "to engage in",
+      "to hold (a party)",
+      "to be",
+      "to become",
+      "to function (in some capacity)",
+      "to serve as",
+      "to be used for",
+      "to form (a bond or relationship)",
+      "to pretend",
+      "to feign",
+      "to act a part",
+      "to put on appearance"
+    ]
+  },
+  {
+    "word": "坐",
+    "pinyin1": "zuò",
+    "english": ["sit", "to sit", "to take a seat", "to take a bus"]
+  }
 ]
