@@ -64,12 +64,7 @@ export default function HskPage() {
         <section className="section section--hsk-practice">
           <p className="assignment-description">Translate to Chinese</p>
           <p className="assignment-text">{answers[question].english}</p>
-          <input
-            ref={answerRef}
-            className="practice-input"
-            type="text"
-            lang="zh-Hans"
-          />
+          <input ref={answerRef} className="practice-input" type="text" />
           <button className="cta--next" onClick={nextAction}>
             Check
           </button>
