@@ -21,3 +21,27 @@ export function weightedRandomInt(spec) {
   const { min, max } = spec[weights[rand]]
   return randomInt(min, max)
 }
+
+/**
+ * Fisher-Yates Shuffle: unbiased array shuffle algorithm
+ * @param {Array} xs
+ * @returns {Array}
+ */
+export function shuffle(xs) {
+  const ys = xs.slice()
+
+  let currentIndex = ys.length
+  let randomIndex = null
+  let temporaryValue = null
+
+  while (0 !== currentIndex) {
+    randomIndex = Math.floor(Math.random() * currentIndex)
+    currentIndex -= 1
+
+    temporaryValue = ys[currentIndex]
+    ys[currentIndex] = ys[randomIndex]
+    ys[randomIndex] = temporaryValue
+  }
+
+  return ys
+}

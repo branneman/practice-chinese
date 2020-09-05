@@ -11,7 +11,7 @@ const getSemiRandomInt = () =>
   weightedRandomInt([
     { weight: 3, min: 0, max: 99 },
     { weight: 2, min: 0, max: 999 },
-    { weight: 1, min: -999, max: -1 }
+    { weight: 1, min: -999, max: -1 },
   ])
 
 export default function NumbersPracticePage() {
