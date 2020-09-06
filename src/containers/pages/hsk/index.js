@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { compose, map, filter, slice, assoc } from 'ramda'
+// import useVisualViewport from '../../../hooks/viewport'
 
 import hsk from '../../../data/hsk.json'
 import { shuffle } from '../../../utils/random'
@@ -18,6 +19,8 @@ export const getPercentageCorrect = (answers) => {
 
 export default function HskPage() {
   const answerRef = useRef(null)
+
+  // const visualViewport = useVisualViewport()
 
   const [state, setState] = useState('start')
 
@@ -110,7 +113,9 @@ export default function HskPage() {
       }
       return (
         <section className="section section--correct section--hsk-practice">
-          <p className="">Correct: {getPercentageCorrect(answers)}%</p>
+          <p className="assignment-result">
+            Correct: {getPercentageCorrect(answers)}%
+          </p>
           <button className="cta--next" onClick={nextAction}>
             Restart
           </button>
@@ -122,6 +127,9 @@ export default function HskPage() {
       nextAction = () => setState('question')
       return (
         <section className="section section--hsk-practice">
+          <p className="assignment-description">
+            Translate HSK1 words to Chinese
+          </p>
           <button className="cta--next" onClick={nextAction}>
             Start
           </button>

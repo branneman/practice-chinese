@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react'
+// import useVisualViewport from '../../../hooks/viewport'
 
 import { weightedRandomInt } from '../../../utils/random'
 import arabic2chinese from '../../../utils/arabic2chinese'
@@ -16,9 +17,11 @@ const getSemiRandomInt = () =>
   ])
 
 export default function Numbers() {
-  const [state, setState] = useState('start')
-
   const answerRef = useRef(null)
+
+  // const visualViewport = useVisualViewport()
+
+  const [state, setState] = useState('start')
 
   const [answers, setAnswers] = useState([])
   const addAnswer = (a) => setAnswers(answers.concat(a))
@@ -90,6 +93,9 @@ export default function Numbers() {
       nextAction = () => setState('question')
       return (
         <section className="section section--numbers-practice">
+          <p className="assignment-description">
+            Translate arabic numbers to Chinese
+          </p>
           <button className="cta--next" onClick={nextAction}>
             Start
           </button>
