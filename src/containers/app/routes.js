@@ -1,31 +1,20 @@
 import Home from '../pages/home'
+import NotFound from '../pages/not-found'
 
 import HSK from '../pages/hsk'
-
 import Numbers from '../pages/numbers'
-import NumbersPractice from '../pages/numbers/practice'
-
-import NotFound from '../pages/not-found'
 
 export default [
   {
     path: '/hsk',
     component: HSK,
-    name: 'HSK',
+    name: 'HSK: Test',
   },
 
   {
     path: '/numbers',
     component: Numbers,
-    name: 'Numbers',
-    routes: [
-      {
-        path: '/numbers/practice',
-        component: (props) =>
-          props.match.isExact ? NumbersPractice(props) : NotFound(props),
-        name: 'Practice',
-      },
-    ],
+    name: 'Numbers: Test',
   },
 
   {

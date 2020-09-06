@@ -37,9 +37,7 @@ export default function Nav({ routes }) {
         <button
           className="nav__toggle nav__toggle--open"
           onClick={() => setOpen(true)}
-        >
-          <span>☰</span>
-        </button>
+        ></button>
       </div>
     )
   }
@@ -49,9 +47,7 @@ export default function Nav({ routes }) {
       <button
         className="nav__toggle nav__toggle--close"
         onClick={() => setOpen(false)}
-      >
-        <span>⨯</span>
-      </button>
+      ></button>
       <nav className="nav__menu">{renderRoutes(sortRoutes(routes))}</nav>
     </div>
   )

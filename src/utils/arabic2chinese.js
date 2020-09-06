@@ -13,7 +13,7 @@ const mods = {
   1e32: '沟', // gōu
   1e36: '涧', // jiàn
   1e40: '正', // zhēng
-  1e44: '载' // zài
+  1e44: '载', // zài
 }
 const base = [
   '零', // líng
@@ -26,7 +26,7 @@ const base = [
   '七', // qī
   '八', // bā
   '九', // jiǔ
-  '十' // shí
+  '十', // shí
 ]
 
 export default function arabic2chinese(a) {
