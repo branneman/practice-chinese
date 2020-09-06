@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   id="svg8"
+   version="1.1"
+   viewBox="0 0 12.7 12.7"
+   height="48"
+   width="48">
+  <g
+     id="layer2">
+    <g
+       id="text3727"
+       style="font-style:normal;font-weight:normal;font-size:17.43013954px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.43575352"
+       transform="scale(1.0005345,0.99946579)"
+       aria-label="☰">
+      <path
+         id="path106"
+         style="stroke-width:0.43575352"
+         d="M -0.00295082,10.999824 H 12.729221 v 1.702162 H -0.00295082 Z m 0,-5.4979832 H 12.729221 v 1.702162 H -0.00295082 Z m 0,-5.5064943 H 12.729221 V 1.6975086 H -0.00295082 Z" />
+    </g>
+  </g>
+</svg>
