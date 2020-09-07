@@ -7,6 +7,7 @@ import { shuffle } from '../../../utils/random'
 
 import './index.scss'
 
+const FOCUS_DELAY_MS = 50
 const ENTER_KEY = 13
 
 export const getInitialData = () =>
@@ -47,7 +48,8 @@ export default function HskPage() {
   }
 
   useEffect(() => {
-    if (answerRef.current) answerRef.current.focus()
+    if (answerRef.current)
+      setTimeout(() => answerRef.current.focus(), FOCUS_DELAY_MS)
   })
 
   useEffect(() => {

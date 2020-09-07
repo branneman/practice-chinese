@@ -6,6 +6,7 @@ import arabic2chinese from '../../../utils/arabic2chinese'
 
 import './index.scss'
 
+const FOCUS_DELAY_MS = 50
 const ENTER_KEY = 13
 const TEST_MAX_RANDOM_INT = 9999
 
@@ -33,7 +34,8 @@ export default function Numbers() {
   }
 
   useEffect(() => {
-    if (answerRef.current) answerRef.current.focus()
+    if (answerRef.current)
+      setTimeout(() => answerRef.current.focus(), FOCUS_DELAY_MS)
   })
 
   useEffect(() => {
