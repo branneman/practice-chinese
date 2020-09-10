@@ -28,7 +28,7 @@ export default function Numbers() {
   const addAnswer = (a) => setAnswers(answers.concat(a))
   const checkAnswer = (n) => {
     const correct = arabic2chinese(n)
-    const attempt = answerRef.current.value
+    const attempt = answerRef.current.value.trim()
     setState(attempt === correct ? 'correct' : 'incorrect')
     addAnswer({ n, attempt, correct })
   }

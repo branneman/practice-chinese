@@ -2,30 +2,63 @@ import React, { useEffect, useRef, useState } from 'react'
 import { compose, map, filter, slice, assoc } from 'ramda'
 // import useVisualViewport from '../../../hooks/viewport'
 
-import hsk from '../../../data/hsk.json'
+import { isPOJO, isArr, isStr } from '../../../utils/type-checks'
 import { shuffle } from '../../../utils/random'
 
 import './index.scss'
 
 const FOCUS_DELAY_MS = 50
 const ENTER_KEY = 13
+const VOCAB_URL = `https://gist.githubusercontent.com/branneman/20d2b2cc1e234c4b664f1cf3962082e7/raw/zhongwen-vocab-bran.json`
 
-export const getInitialData = () =>
-  compose(shuffle, map(assoc('correct', null)), slice(0, Infinity))(hsk)
+export const shuffleData = compose(
+  shuffle,
+  map(assoc('correct', null)),
+  slice(0, Infinity)
+)
+
+export const isValidData = (data) => {
+  if (!isArr(data)) return false
+  return !data.some((d) => {
+    if (!isPOJO(d)) return true
+    if (!isStr(d.word)) return true
+    if (!isArr(d.english)) return true
+    return !d.english.some(isStr)
+  })
+}
 
 export const getPercentageCorrect = (answers) => {
   const p = filter((x) => x.correct === true, answers).length / answers.length
   return Math.round(p * 10000) / 100 // Safely round to 2 decimals
 }
 
-export default function HskPage() {
+export default function VocabPage() {
   const answerRef = useRef(null)
 
   // const visualViewport = useVisualViewport()
 
-  const [state, setState] = useState('start')
+  const [data, setData] = useState(null)
+  const [state, setState] = useState('loading')
 
-  const [answers, setAnswers] = useState(getInitialData())
+  useEffect(() => {
+    async function f() {
+      try {
+        const response = await fetch(VOCAB_URL)
+        const jsonStr = await response.text()
+        const json = JSON.parse(jsonStr)
+        if (!isValidData(json)) throw new Error('Error: JSON not valid')
+        setData(json)
+        setState('start')
+      } catch (err) {
+        console.log(err)
+        setData(err)
+        setState('error')
+      }
+    }
+    f()
+  }, [])
+
+  const [answers, setAnswers] = useState(null)
   const checkAnswer = () => {
     const word = answers[question]
     const correct = answerRef.current.value.trim() === word.word
@@ -61,12 +94,12 @@ export default function HskPage() {
     return () => window.removeEventListener('keyup', fn)
   })
 
-  let nextAction
+  let nextAction = () => 0
   switch (state) {
     case 'question':
       nextAction = () => checkAnswer()
       return (
-        <section className="section section--hsk-practice">
+        <section className="section section--vocab-practice">
           <p className="assignment-description">Translate to Chinese</p>
           <p className="assignment-text">
             {answers[question].english.join(', ')}
@@ -81,7 +114,7 @@ export default function HskPage() {
     case 'correct':
       nextAction = () => nextQuestion()
       return (
-        <section className="section section--correct section--hsk-practice">
+        <section className="section section--vocab-practice">
           <p className="assignment-result">Correct!</p>
           <button className="cta--next" onClick={nextAction}>
             Continue
@@ -92,7 +125,7 @@ export default function HskPage() {
     case 'incorrect':
       nextAction = () => nextQuestion()
       return (
-        <section className="section section--incorrect section--hsk-practice">
+        <section className="section section--vocab-practice">
           <p className="assignment-result">Incorrect!</p>
           {answers[answers.length - 1] && (
             <p className="assignment-description">
@@ -108,12 +141,12 @@ export default function HskPage() {
 
     case 'done':
       nextAction = () => {
-        setAnswers(getInitialData())
+        setAnswers(shuffleData(data))
         setQuestion(0)
         setState('question')
       }
       return (
-        <section className="section section--correct section--hsk-practice">
+        <section className="section section--vocab-practice">
           <p className="assignment-result">
             Correct: {getPercentageCorrect(answers)}%
           </p>
@@ -123,14 +156,39 @@ export default function HskPage() {
         </section>
       )
 
+    case 'loading':
+      return (
+        <section className="section section--vocab-practice">
+          <p className="assignment-description">Loading...</p>
+        </section>
+      )
+
+    case 'error':
+      return (
+        <section className="section section--incorrect section--vocab-practice">
+          <p className="assignment-description">
+            Error while loading vocab JSON
+          </p>
+        </section>
+      )
+
     default:
     case 'start':
-      nextAction = () => setState('question')
+      nextAction = () => {
+        setAnswers(shuffleData(data))
+        setState('question')
+      }
       return (
-        <section className="section section--hsk-practice">
+        <section className="section section--vocab-practice">
           <p className="assignment-description">
-            Translate HSK1 words to Chinese
+            Translate personal vocabulary to Chinese
           </p>
+          {/* <input
+            ref={vocabRef}
+            className="practice-input"
+            type="text"
+            value={VOCAB_URL}
+          /> */}
           <button className="cta--next" onClick={nextAction}>
             Start
           </button>

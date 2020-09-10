@@ -1,10 +1,17 @@
 import Home from '../pages/home'
 import NotFound from '../pages/not-found'
 
+import Vocab from '../pages/vocab'
 import HSK from '../pages/hsk'
 import Numbers from '../pages/numbers'
 
 export default [
+  {
+    path: '/vocab',
+    component: Vocab,
+    name: 'Vocab: Test',
+  },
+
   {
     path: '/hsk',
     component: HSK,
