@@ -126,7 +126,7 @@ export default function VocabPage() {
     case 'correct':
       nextAction = () => nextQuestion()
       return (
-        <section className="section section--vocab-practice">
+        <section className="section section--correct section--vocab-practice">
           <p className="assignment-result">Correct!</p>
           <button className="cta--next" onClick={nextAction}>
             Continue
@@ -137,7 +137,7 @@ export default function VocabPage() {
     case 'incorrect':
       nextAction = () => nextQuestion()
       return (
-        <section className="section section--vocab-practice">
+        <section className="section section--incorrect section--vocab-practice">
           <p className="assignment-result">Incorrect!</p>
           {answers[answers.length - 1] && (
             <>
