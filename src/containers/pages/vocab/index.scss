@@ -5,4 +5,23 @@
     height: 100%;
     padding-top: 2em;
   }
+
+  .assignment-text--smaller {
+    font-size: 1.6em;
+  }
+}
+
+.cta {
+  display: block;
+  width: 100%;
+  margin: 1em 0 0 0;
+  border: 0;
+  padding: 0.5em;
+
+  font-size: 1.4em;
+  font-weight: bold;
+  color: #fff;
+  background: forestgreen;
+  text-transform: uppercase;
+  cursor: pointer;
 }
