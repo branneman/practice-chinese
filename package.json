@@ -12,7 +12,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build && cp CNAME build"
+    "build": "react-scripts build && cp CNAME build",
+    "test": "react-scripts test"
   },
   "eslintConfig": {
     "extends": "react-app"

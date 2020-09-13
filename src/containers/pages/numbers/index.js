@@ -3,18 +3,20 @@ import React, { useEffect, useRef, useState } from 'react'
 
 import { weightedRandomInt } from '../../../utils/random'
 import arabic2chinese from '../../../utils/arabic2chinese'
+import { isEqualCharacters } from '../../../utils/chinese'
 
 import './index.scss'
 
 const FOCUS_DELAY_MS = 50
 const ENTER_KEY = 13
-const TEST_MAX_RANDOM_INT = 9999
 
 const getSemiRandomInt = () =>
   weightedRandomInt([
-    { weight: 2 /* 40% */, min: 0, max: 99 },
-    { weight: 2 /* 40% */, min: 0, max: TEST_MAX_RANDOM_INT },
-    { weight: 1 /* 20% */, min: -TEST_MAX_RANDOM_INT, max: -1 },
+    { weight: 2 /* 25% */, min: 0, max: 99 },
+    { weight: 2 /* 25% */, min: 0, max: 990 },
+    { weight: 2 /* 25% */, min: 0, max: 9999 },
+    { weight: 1 /* 12.5% */, min: -999, max: -1 },
+    { weight: 1 /* 12.5% */, min: -9999, max: -1 },
   ])
 
 export default function Numbers() {
@@ -28,8 +30,8 @@ export default function Numbers() {
   const addAnswer = (a) => setAnswers(answers.concat(a))
   const checkAnswer = (n) => {
     const correct = arabic2chinese(n)
-    const attempt = answerRef.current.value.trim()
-    setState(attempt === correct ? 'correct' : 'incorrect')
+    const attempt = answerRef.current.value
+    setState(isEqualCharacters(attempt, correct) ? 'correct' : 'incorrect')
     addAnswer({ n, attempt, correct })
   }
 

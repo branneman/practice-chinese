@@ -2,8 +2,9 @@ import React, { useEffect, useRef, useState } from 'react'
 import { compose, map, filter, slice, assoc } from 'ramda'
 // import useVisualViewport from '../../../hooks/viewport'
 
-import { isPOJO, isArr, isStr } from '../../../utils/type-checks'
+import { isEqualCharacters } from '../../../utils/chinese'
 import { shuffle } from '../../../utils/random'
+import { isPOJO, isArr, isStr } from '../../../utils/type-checks'
 
 import './index.scss'
 
@@ -73,7 +74,10 @@ export default function VocabPage() {
   const [answers, setAnswers] = useState(null)
   const checkAnswer = () => {
     const zhongwen = answers[question]
-    const correct = answerRef.current.value.trim() === zhongwen.zhongwen
+    const correct = isEqualCharacters(
+      answerRef.current.value,
+      zhongwen.zhongwen
+    )
 
     setState(correct ? 'correct' : 'incorrect')
 

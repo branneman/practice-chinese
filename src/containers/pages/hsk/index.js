@@ -3,6 +3,7 @@ import { compose, map, filter, slice, assoc } from 'ramda'
 // import useVisualViewport from '../../../hooks/viewport'
 
 import hsk from '../../../data/hsk.json'
+import { isEqualCharacters } from '../../../utils/chinese'
 import { shuffle } from '../../../utils/random'
 
 import './index.scss'
@@ -28,7 +29,7 @@ export default function HskPage() {
   const [answers, setAnswers] = useState(getInitialData())
   const checkAnswer = () => {
     const word = answers[question]
-    const correct = answerRef.current.value.trim() === word.word
+    const correct = isEqualCharacters(answerRef.current.value, word.word)
 
     setState(correct ? 'correct' : 'incorrect')
 
