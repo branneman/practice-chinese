@@ -48,15 +48,15 @@ export default function VocabPage() {
       try {
         const [resWords, resSentences] = await Promise.all([
           fetch(VOCAB_URL_WORDS),
-          fetch(VOCAB_URL_SENTENCES),
+          fetch(VOCAB_URL_SENTENCES)
         ])
         const [jsonStrWords, jsonStrSentences] = await Promise.all([
           resWords.text(),
-          resSentences.text(),
+          resSentences.text()
         ])
         const [words, sentences] = [
           JSON.parse(jsonStrWords),
-          JSON.parse(jsonStrSentences),
+          JSON.parse(jsonStrSentences)
         ]
         if (!isValidData(words) || !isValidData(sentences)) {
           throw new Error('Error: JSON not valid')
@@ -79,10 +79,11 @@ export default function VocabPage() {
       zhongwen.zhongwen
     )
 
-    setState(correct ? 'correct' : 'incorrect')
-
+    zhongwen.answer = answerRef.current.value
     zhongwen.correct = correct
     setAnswers(answers)
+
+    setState(correct ? 'correct' : 'incorrect')
   }
 
   const [question, setQuestion] = useState(0)
@@ -145,6 +146,10 @@ export default function VocabPage() {
           <p className="assignment-result">Incorrect!</p>
           {answers[answers.length - 1] && (
             <>
+              <p className="assignment-description">Your answer:</p>
+              <p className="assignment-description">
+                {answers[question].answer}
+              </p>
               <p className="assignment-description">Correct answer:</p>
               <p className="assignment-description">
                 {answers[question].zhongwen}
