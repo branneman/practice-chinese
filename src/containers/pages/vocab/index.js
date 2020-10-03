@@ -11,7 +11,8 @@ import './index.scss'
 const FOCUS_DELAY_MS = 50
 const ENTER_KEY = 13
 const VOCAB_BASE_URL = `https://gist.githubusercontent.com/branneman/20d2b2cc1e234c4b664f1cf3962082e7/raw`
-const VOCAB_URL_WORDS = `${VOCAB_BASE_URL}/zhongwen-vocab-words.json`
+const VOCAB_URL_VOCAB1 = `${VOCAB_BASE_URL}/zhongwen-vocab-vocab1.json`
+const VOCAB_URL_VOCAB2 = `${VOCAB_BASE_URL}/zhongwen-vocab-vocab2.json`
 const VOCAB_URL_SENTENCES = `${VOCAB_BASE_URL}/zhongwen-vocab-sentences.json`
 
 export const shuffleData = compose(
@@ -46,22 +47,33 @@ export default function VocabPage() {
   useEffect(() => {
     ;(async () => {
       try {
-        const [resWords, resSentences] = await Promise.all([
-          fetch(VOCAB_URL_WORDS),
-          fetch(VOCAB_URL_SENTENCES)
+        const [resVocab1, resVocab2, resSentences] = await Promise.all([
+          fetch(VOCAB_URL_VOCAB1),
+          fetch(VOCAB_URL_VOCAB2),
+          fetch(VOCAB_URL_SENTENCES),
         ])
-        const [jsonStrWords, jsonStrSentences] = await Promise.all([
-          resWords.text(),
-          resSentences.text()
+        const [
+          jsonStrVocab1,
+          jsonStrVocab2,
+          jsonStrSentences,
+        ] = await Promise.all([
+          resVocab1.text(),
+          resVocab2.text(),
+          resSentences.text(),
         ])
-        const [words, sentences] = [
-          JSON.parse(jsonStrWords),
-          JSON.parse(jsonStrSentences)
+        const [vocab1, vocab2, sentences] = [
+          JSON.parse(jsonStrVocab1),
+          JSON.parse(jsonStrVocab2),
+          JSON.parse(jsonStrSentences),
         ]
-        if (!isValidData(words) || !isValidData(sentences)) {
+        if (
+          !isValidData(vocab1) ||
+          !isValidData(vocab2) ||
+          !isValidData(sentences)
+        ) {
           throw new Error('Error: JSON not valid')
         }
-        setData({ words, sentences })
+        setData({ vocab1, vocab2, sentences })
         setState('start')
       } catch (err) {
         console.log(err)
@@ -206,8 +218,11 @@ export default function VocabPage() {
           <p className="assignment-description">
             Translate personal vocabulary to Chinese
           </p>
-          <button className="cta" onClick={nextAction('words')}>
-            Words
+          <button className="cta" onClick={nextAction('vocab1')}>
+            Words: Vocab 1 (DL)
+          </button>
+          <button className="cta" onClick={nextAction('vocab2')}>
+            Words: Vocab 2 (EUR)
           </button>
           <button className="cta" onClick={nextAction('sentences')}>
             Sentences
