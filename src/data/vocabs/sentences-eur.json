@@ -1,0 +1,25 @@
+[
+  { "zhongwen": "你是王先生？", "pinyin1": "Nǐ shì Wáng xiānsheng?", "english": ["Are you Mr. Wang?"] },
+  { "zhongwen": "你是王怒视吗？", "pinyin1": "Nǐ shì Wáng nǘshì ma?", "english": ["Are you Mrs. Wang?"] },
+  { "zhongwen": "你是Linda吗？", "pinyin1": "Nǐ shì Linda ma?", "english": ["Are you Linda?"] },
+  { "zhongwen": "她是Johnson", "pinyin1": "Tā shì Johnson", "english": ["She is Johnson"] },
+  { "zhongwen": "我很高兴见到你", "pinyin1": "Wǒ hěn gāo xìng jiàndào nǐ", "english": ["Nice to meet you"] },
+  { "zhongwen": "我也很高兴见到你", "pinyin1": "Wǒ yě hěn gāo xìng jiàndào nǐ", "english": ["Nice to meet you too"] },
+  { "zhongwen": "史密斯先生", "pinyin1": "Shǐmìsī xiānsheng", "english": ["Mr. Smith"] },
+  { "zhongwen": "我是史密斯", "pinyin1": "Wǒ shì Shǐmìsī", "english": ["I am Smith"] },
+  { "zhongwen": "我叫大卫", "pinyin1": "Wǒ jiào Dàwèi", "english": ["I am called David"] },
+  { "zhongwen": "请叫我大卫", "pinyin1": "Qǐng jiào wǒ Dàwèi", "english": ["Please call me David"] },
+  { "zhongwen": "请叫我大卫吧", "pinyin1": "Qǐng jiào wǒ Dàwèi ba", "english": ["Please call me David (friendly)"] },
+  { "zhongwen": "欢迎！", "pinyin1": "Huānyíng!", "english": ["Welcome!"] },
+  { "zhongwen": "欢迎你来中国", "pinyin1": "Huānyíng nǐ lái zhōngguó", "english": ["Welcome to China"] },
+  { "zhongwen": "欢迎您来中国", "pinyin1": "Huānyíng nín lái zhōngguó", "english": ["Welcome to China (polite, formal)"] },
+  { "zhongwen": "下星期见", "pinyin1": "Xià xīngqī jiàn", "english": ["See you next week"] },
+
+  { "zhongwen": "您是史密斯先生吗？", "pinyin1": "Nín shì Shǐmìsī xiānsheng ma?", "english": ["Are you Mr. Smith? (formal)"] },
+  { "zhongwen": "是的。您是？", "pinyin1": "Shì de. Nín shì?", "english": ["Yes. And you are?"] },
+  { "zhongwen": "你好史密斯先生。我是王林。", "pinyin1": "Nǐ hǎo Shǐmìsī xiānsheng. Wǒ shì Wáng Lín.", "english": ["Hello Mr. Smith. I am Wang Lin."] },
+  { "zhongwen": "你好王先生。很高兴见到你。", "pinyin1": "Nǐ hǎo Wáng xiānsheng. Hěn gāoxìng jiàndào nǐ.", "english": ["Hello Mr. Wang. Nice to meet you."] },
+  { "zhongwen": "我也很高兴见到你。请叫我老王吧。", "pinyin1": "Wǒ yě hěn gāoxìng jiàndào nǐ. Qǐng jiào wǒ Lǎo Wáng ba.", "english": ["Nice to meet you too. Please call me Lao Wang."] },
+  { "zhongwen": "好吧，老王。叫我大卫吧。", "pinyin1": "Hǎo ba, Lǎo Wáng. Jiào wǒ Dàwèi ba.", "english": ["Ok, Lao Wang. Call me David."] },
+  { "zhongwen": "好的，大卫。欢迎你来中国。", "pinyin1": "Hǎo de, Dàwèi. Huānyíng nǐ lái Zhōngguó", "english": ["Ok David. Welcome to China."] }
+]

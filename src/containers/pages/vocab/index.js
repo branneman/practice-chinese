@@ -1,35 +1,22 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { compose, map, filter, slice, assoc } from 'ramda'
-// import useVisualViewport from '../../../hooks/viewport'
 
+import data from '../../../data/vocabs'
+
+// import useVisualViewport from '../../../hooks/viewport'
 import { isEqualCharacters } from '../../../utils/chinese'
 import { shuffle } from '../../../utils/random'
-import { isPOJO, isArr, isStr } from '../../../utils/type-checks'
 
 import './index.scss'
 
 const FOCUS_DELAY_MS = 50
 const ENTER_KEY = 13
-const VOCAB_BASE_URL = `https://gist.githubusercontent.com/branneman/20d2b2cc1e234c4b664f1cf3962082e7/raw`
-const VOCAB_URL_VOCAB1 = `${VOCAB_BASE_URL}/zhongwen-vocab-vocab1.json`
-const VOCAB_URL_VOCAB2 = `${VOCAB_BASE_URL}/zhongwen-vocab-vocab2.json`
-const VOCAB_URL_SENTENCES = `${VOCAB_BASE_URL}/zhongwen-vocab-sentences.json`
 
 export const shuffleData = compose(
   shuffle,
   map(assoc('correct', null)),
   slice(0, Infinity)
 )
-
-export const isValidData = (data) => {
-  if (!isArr(data)) return false
-  return !data.some((d) => {
-    if (!isPOJO(d)) return true
-    if (!isStr(d.zhongwen)) return true
-    if (!isArr(d.english)) return true
-    return !d.english.some(isStr)
-  })
-}
 
 export const getPercentageCorrect = (answers) => {
   const p = filter((x) => x.correct === true, answers).length / answers.length
@@ -41,47 +28,7 @@ export default function VocabPage() {
 
   // const visualViewport = useVisualViewport()
 
-  const [data, setData] = useState(null)
-  const [state, setState] = useState('loading')
-
-  useEffect(() => {
-    ;(async () => {
-      try {
-        const [resVocab1, resVocab2, resSentences] = await Promise.all([
-          fetch(VOCAB_URL_VOCAB1),
-          fetch(VOCAB_URL_VOCAB2),
-          fetch(VOCAB_URL_SENTENCES),
-        ])
-        const [
-          jsonStrVocab1,
-          jsonStrVocab2,
-          jsonStrSentences,
-        ] = await Promise.all([
-          resVocab1.text(),
-          resVocab2.text(),
-          resSentences.text(),
-        ])
-        const [vocab1, vocab2, sentences] = [
-          JSON.parse(jsonStrVocab1),
-          JSON.parse(jsonStrVocab2),
-          JSON.parse(jsonStrSentences),
-        ]
-        if (
-          !isValidData(vocab1) ||
-          !isValidData(vocab2) ||
-          !isValidData(sentences)
-        ) {
-          throw new Error('Error: JSON not valid')
-        }
-        setData({ vocab1, vocab2, sentences })
-        setState('start')
-      } catch (err) {
-        console.log(err)
-        setData(err)
-        setState('error')
-      }
-    })()
-  }, [])
+  const [state, setState] = useState('start')
 
   const [answers, setAnswers] = useState(null)
   const checkAnswer = () => {
@@ -128,13 +75,13 @@ export default function VocabPage() {
     case 'question':
       nextAction = () => checkAnswer()
       return (
-        <section className="section section--vocab-practice">
-          <p className="assignment-description">Translate to Chinese</p>
-          <p className="assignment-text assignment-text--smaller">
+        <section className='section section--vocab-practice'>
+          <p className='assignment-description'>Translate to Chinese</p>
+          <p className='assignment-text assignment-text--smaller'>
             {answers[question].english.join(', ')}
           </p>
-          <input ref={answerRef} className="practice-input" type="text" />
-          <button className="cta--next" onClick={nextAction}>
+          <input ref={answerRef} className='practice-input' type='text' />
+          <button className='cta--next' onClick={nextAction}>
             Check
           </button>
         </section>
@@ -143,9 +90,9 @@ export default function VocabPage() {
     case 'correct':
       nextAction = () => nextQuestion()
       return (
-        <section className="section section--correct section--vocab-practice">
-          <p className="assignment-result">Correct!</p>
-          <button className="cta--next" onClick={nextAction}>
+        <section className='section section--correct section--vocab-practice'>
+          <p className='assignment-result'>Correct!</p>
+          <button className='cta--next' onClick={nextAction}>
             Continue
           </button>
         </section>
@@ -154,24 +101,24 @@ export default function VocabPage() {
     case 'incorrect':
       nextAction = () => nextQuestion()
       return (
-        <section className="section section--incorrect section--vocab-practice">
-          <p className="assignment-result">Incorrect!</p>
+        <section className='section section--incorrect section--vocab-practice'>
+          <p className='assignment-result'>Incorrect!</p>
           {answers[answers.length - 1] && (
             <>
-              <p className="assignment-description">Your answer:</p>
-              <p className="assignment-description">
+              <p className='assignment-description'>Your answer:</p>
+              <p className='assignment-description'>
                 {answers[question].answer}
               </p>
-              <p className="assignment-description">Correct answer:</p>
-              <p className="assignment-description">
+              <p className='assignment-description'>Correct answer:</p>
+              <p className='assignment-description'>
                 {answers[question].zhongwen}
               </p>
-              <p className="assignment-description">
+              <p className='assignment-description'>
                 {answers[question].pinyin1}
               </p>
             </>
           )}
-          <button className="cta--next" onClick={nextAction}>
+          <button className='cta--next' onClick={nextAction}>
             Continue
           </button>
         </section>
@@ -180,29 +127,13 @@ export default function VocabPage() {
     case 'done':
       nextAction = () => setState('start')
       return (
-        <section className="section section--vocab-practice">
-          <p className="assignment-result">
+        <section className='section section--vocab-practice'>
+          <p className='assignment-result'>
             Correct: {getPercentageCorrect(answers)}%
           </p>
-          <button className="cta--next" onClick={nextAction}>
+          <button className='cta--next' onClick={nextAction}>
             Restart
           </button>
-        </section>
-      )
-
-    case 'loading':
-      return (
-        <section className="section section--vocab-practice">
-          <p className="assignment-description">Loading...</p>
-        </section>
-      )
-
-    case 'error':
-      return (
-        <section className="section section--incorrect section--vocab-practice">
-          <p className="assignment-description">
-            Error while loading vocab JSON
-          </p>
         </section>
       )
 
@@ -214,18 +145,19 @@ export default function VocabPage() {
         setState('question')
       }
       return (
-        <section className="section section--vocab-practice">
-          <p className="assignment-description">
-            Translate personal vocabulary to Chinese
-          </p>
-          <button className="cta" onClick={nextAction('vocab1')}>
-            Words: Vocab 1 (DL)
+        <section className='section section--vocab-practice'>
+          <p className='assignment-description'>Choose vocabulary</p>
+          <button className='cta' onClick={nextAction('wordsDL')}>
+            Words: DL
           </button>
-          <button className="cta" onClick={nextAction('vocab2')}>
-            Words: Vocab 2 (EUR)
+          <button className='cta' onClick={nextAction('wordsEUR')}>
+            Words: EUR
           </button>
-          <button className="cta" onClick={nextAction('sentences')}>
-            Sentences
+          <button className='cta' onClick={nextAction('sentencesDL')}>
+            Sentences: DL
+          </button>
+          <button className='cta' onClick={nextAction('sentencesEUR')}>
+            Sentences: EUR
           </button>
         </section>
       )
