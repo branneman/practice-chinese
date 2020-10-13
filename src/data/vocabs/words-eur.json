@@ -48,5 +48,27 @@
   { "zhongwen": "不", "pinyin1": "bù", "english": ["no", "not"] },
   { "zhongwen": "不客气", "pinyin1": "bú kèqì", "english": ["you are welcome", "don't mention it", "(lit. \"you are too polite\", \"please don't thank me\")"] },
   { "zhongwen": "是的", "pinyin1": "shìde", "english": ["yes", "that's right"] },
-  { "zhongwen": "不是", "pinyin1": "bú shì", "english": ["no", "false", "(lit. \"not is\")"] }
+  { "zhongwen": "不是", "pinyin1": "bú shì", "english": ["no", "false", "(lit. \"not is\")"] },
+
+  { "zhongwen": "国", "pinyin1": "guó", "english": ["country"] },
+  { "zhongwen": "人", "pinyin1": "rén", "english": ["people"] },
+  { "zhongwen": "英国", "pinyin1": "yīngguó", "english": ["United Kingdom"] },
+  { "zhongwen": "英语", "pinyin1": "yīngyǔ", "english": ["English", "(spoken language)"] },
+  { "zhongwen": "英文", "pinyin1": "yīngwén", "english": ["English", "(written language)"] },
+  { "zhongwen": "说", "pinyin1": "shuō", "english": ["speak"] },
+  { "zhongwen": "会", "pinyin1": "huì", "english": ["able to"] },
+  { "zhongwen": "美国", "pinyin1": "meiguo", "english": ["United States"] },
+  { "zhongwen": "泰国", "pinyin1": "tàiguó", "english": ["Thailand"] },
+  { "zhongwen": "德国", "pinyin1": "déguó", "english": ["Germany"] },
+  { "zhongwen": "荷兰", "pinyin1": "hélán", "english": ["Netherlands"] },
+  { "zhongwen": "西班牙", "pinyin1": "xībānyá", "english": ["Spain"] },
+  { "zhongwen": "和", "pinyin1": "hé", "english": ["and; with"] },
+  { "zhongwen": "名字", "pinyin1": "míngzi", "english": ["given name"] },
+  { "zhongwen": "什么", "pinyin1": "shénme", "english": ["what"] },
+  { "zhongwen": "哪", "pinyin1": "nǎ", "english": ["which"] },
+  { "zhongwen": "哪里", "pinyin1": "nǎlǐ", "english": ["where"] },
+  { "zhongwen": "知道", "pinyin1": "zhīdào", "english": ["to know"] },
+  { "zhongwen": "猜", "pinyin1": "cāi", "english": ["to guess"] },
+  { "zhongwen": "了", "pinyin1": "le", "english": ["to finish", "[past modifier]"] },
+  { "zhongwen": "小", "pinyin1": "xiaǒ", "english": ["young"] }
 ]
