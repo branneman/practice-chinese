@@ -1,0 +1,631 @@
+[
+  {
+    "chinese": [
+      { "sentence": "你是王先生吗？", "pinyin": "Nǐ shì Wáng xiānsheng ma?" }
+    ],
+    "english": ["Are you Mr. Wang?"]
+  },
+  {
+    "chinese": [
+      { "sentence": "你是王女士吗？", "pinyin": "Nǐ shì Wáng nǘshì ma?" }
+    ],
+    "english": ["Are you Mrs. Wang?"]
+  },
+  {
+    "chinese": [{ "sentence": "你是Linda吗？", "pinyin": "Nǐ shì Linda ma?" }],
+    "english": ["Are you Linda?"]
+  },
+  {
+    "chinese": [{ "sentence": "她是Johnson", "pinyin": "Tā shì Johnson" }],
+    "english": ["She is Johnson"]
+  },
+  {
+    "chinese": [
+      { "sentence": "很高兴见到你", "pinyin": "Hěn gāo xìng jiàndào nǐ" }
+    ],
+    "english": ["Nice to meet you"]
+  },
+  {
+    "chinese": [
+      {
+        "sentence": "我也很高兴见到你",
+        "pinyin": "Wǒ yě hěn gāo xìng jiàndào nǐ"
+      }
+    ],
+    "english": ["Nice to meet you too"]
+  },
+  {
+    "chinese": [{ "sentence": "史密斯先生", "pinyin": "Shǐmìsī xiānsheng" }],
+    "english": ["Mr. Smith"]
+  },
+  {
+    "chinese": [{ "sentence": "我是史密斯", "pinyin": "Wǒ shì Shǐmìsī" }],
+    "english": ["I am Smith"]
+  },
+  {
+    "chinese": [{ "sentence": "我叫大卫", "pinyin": "Wǒ jiào Dàwèi" }],
+    "english": ["I am called David"]
+  },
+  {
+    "chinese": [{ "sentence": "请叫我大卫", "pinyin": "Qǐng jiào wǒ Dàwèi" }],
+    "english": ["Please call me David"]
+  },
+  {
+    "chinese": [
+      { "sentence": "请叫我大卫吧", "pinyin": "Qǐng jiào wǒ Dàwèi ba" }
+    ],
+    "english": ["Please call me David (friendly)"]
+  },
+  {
+    "chinese": [{ "sentence": "请来中国", "pinyin": "Qǐng lái Zhōngguó" }],
+    "english": ["Please come to China."]
+  },
+  {
+    "chinese": [{ "sentence": "吃吧", "pinyin": "Chī ba" }],
+    "english": ["Please help yourself", "(lit. \"eat (emphatic)\")"]
+  },
+  {
+    "chinese": [
+      { "sentence": "我也是中国人", "pinyin": "Wǒ yě shì Zhōngguórén" }
+    ],
+    "english": ["I am also Chinese"]
+  },
+  {
+    "chinese": [{ "sentence": "欢迎！", "pinyin": "Huānyíng!" }],
+    "english": ["Welcome!"]
+  },
+  {
+    "chinese": [
+      { "sentence": "欢迎你来中国", "pinyin": "Huānyíng nǐ lái Zhōngguó" }
+    ],
+    "english": ["Welcome to China"]
+  },
+  {
+    "chinese": [
+      { "sentence": "欢迎您来中国", "pinyin": "Huānyíng nín lái Zhōngguó" }
+    ],
+    "english": ["Welcome to China (polite, formal)"]
+  },
+  {
+    "chinese": [{ "sentence": "下星期见", "pinyin": "Xià xīngqī jiàn" }],
+    "english": ["See you next week"]
+  },
+
+  {
+    "chinese": [
+      {
+        "sentence": "您是史密斯先生吗？",
+        "pinyin": "Nín shì Shǐmìsī xiānsheng ma?"
+      }
+    ],
+    "english": ["Are you Mr. Smith? (formal)"]
+  },
+  {
+    "chinese": [{ "sentence": "是的。您是？", "pinyin": "Shì de. Nín shì?" }],
+    "english": ["Yes. And you are?"]
+  },
+  {
+    "chinese": [
+      {
+        "sentence": "你好史密斯先生。我是王林。",
+        "pinyin": "Nǐ hǎo Shǐmìsī xiānsheng. Wǒ shì Wáng Lín."
+      }
+    ],
+    "english": ["Hello Mr. Smith. I am Wang Lin."]
+  },
+  {
+    "chinese": [
+      {
+        "sentence": "你好王先生。很高兴见到你。",
+        "pinyin": "Nǐ hǎo Wáng xiānsheng. Hěn gāoxìng jiàndào nǐ."
+      }
+    ],
+    "english": ["Hello Mr. Wang. Nice to meet you."]
+  },
+  {
+    "chinese": [
+      {
+        "sentence": "我也很高兴见到你。请叫我老王吧。",
+        "pinyin": "Wǒ yě hěn gāoxìng jiàndào nǐ. Qǐng jiào wǒ Lǎo Wáng ba."
+      }
+    ],
+    "english": ["Nice to meet you too. Please call me Lao Wang."]
+  },
+  {
+    "chinese": [
+      {
+        "sentence": "好吧，老王。叫我大卫吧。",
+        "pinyin": "Hǎo ba, Lǎo Wáng. Jiào wǒ Dàwèi ba."
+      },
+      {
+        "sentence": "好的，老王。叫我大卫吧。",
+        "pinyin": "Hǎo de, Lǎo Wáng. Jiào wǒ Dàwèi ba."
+      }
+    ],
+    "english": ["Ok, Lao Wang. Call me David."]
+  },
+  {
+    "chinese": [
+      {
+        "sentence": "好吧，大卫。欢迎你来中国。",
+        "pinyin": "Hǎo ba, Dàwèi. Huānyíng nǐ lái Zhōngguó"
+      },
+      {
+        "sentence": "好的，大卫。欢迎你来中国。",
+        "pinyin": "Hǎo de, Dàwèi. Huānyíng nǐ lái Zhōngguó"
+      }
+    ],
+    "english": ["Ok, David. Welcome to China."]
+  },
+
+  {
+    "chinese": [{ "sentence": "我很好。", "pinyin": "Wǒ hěn hǎo." }],
+    "english": ["I am fine.", "I am good."]
+  },
+  {
+    "chinese": [{ "sentence": "你好吗？", "pinyin": "Nǐ hǎo ma?" }],
+    "english": ["How are you?", "(lit. \"You good?\")"]
+  },
+  {
+    "chinese": [
+      { "sentence": "这个咖啡很好喝。", "pinyin": "Zhè gè kāfēi hěn hǎo hē." }
+    ],
+    "english": [
+      "This coffee is tasty",
+      "This coffee is delicious",
+      "(lit. \"This coffee is very good drink\")"
+    ]
+  },
+  {
+    "chinese": [
+      {
+        "sentence": "他有一点儿不高兴。",
+        "pinyin": "Tā yǒu yī diǎnér bú gāoxìng."
+      }
+    ],
+    "english": ["He is not so happy", "(lit. \"He a little bit not happy\")"]
+  },
+  {
+    "chinese": [
+      { "sentence": "我有一点儿累。", "pinyin": "Wǒ yǒu yī diǎnér lèi." }
+    ],
+    "english": ["I am a little tired."]
+  },
+  {
+    "chinese": [{ "sentence": "他很累。", "pinyin": "Tā hěn lèi." }],
+    "english": ["He is tired."]
+  },
+  {
+    "chinese": [
+      { "sentence": "我的一路很顺利。", "pinyin": "Wǒde yīlù hěn shùnlì." }
+    ],
+    "english": ["My journey was very nice"]
+  },
+  {
+    "chinese": [
+      { "sentence": "我想喝一杯茶。", "pinyin": "Wǒ xiǎng hē yī bēi chá." }
+    ],
+    "english": ["I would like to drink a cup of tea."]
+  },
+  {
+    "chinese": [{ "sentence": "我不喝咖啡。", "pinyin": "Wǒ bú hē kāfēi." }],
+    "english": ["I don't drink coffee"]
+  },
+  {
+    "chinese": [
+      { "sentence": "这是你的咖啡。", "pinyin": "Zhè shì nǐde kāfēi." }
+    ],
+    "english": ["This is your coffee"]
+  },
+  {
+    "chinese": [
+      { "sentence": "这是你的咖啡吗？", "pinyin": "Zhè shì nǐde kāfēi ma?" }
+    ],
+    "english": ["Is this your coffee?"]
+  },
+  {
+    "chinese": [{ "sentence": "你喝咖啡吗？", "pinyin": "Nǐ hē kāfēi ma?" }],
+    "english": ["Do you drink coffee?"]
+  },
+  {
+    "chinese": [
+      { "sentence": "你想喝什么？", "pinyin": "Nǐ xiǎng hē shénme?" }
+    ],
+    "english": ["What do you want to drink?"]
+  },
+  {
+    "chinese": [{ "sentence": "不太想。", "pinyin": "Bù tài xiǎng." }],
+    "english": ["Don't want to", "(lit. \"Don't really want to\")"]
+  },
+  {
+    "chinese": [
+      { "sentence": "不。我想喝茶。", "pinyin": "Bù. Wǒ xiǎng hē chá." }
+    ],
+    "english": ["No. I would like to drink tea"]
+  },
+  {
+    "chinese": [{ "sentence": "这是什么？", "pinyin": "Zhè shì shénme?" }],
+    "english": ["What is this?"]
+  },
+
+  {
+    "chinese": [
+      { "sentence": "这是我的咖啡。", "pinyin": "Zhè shì wǒde kāfēi." }
+    ],
+    "english": ["This is my coffee"]
+  },
+  {
+    "chinese": [
+      { "sentence": "这杯咖啡是我的。", "pinyin": "Zhè bēi kāfēi shì wǒde." }
+    ],
+    "english": ["This coffee is mine", "(lit. \"This cup of coffee is mine\")"]
+  },
+  {
+    "chinese": [
+      {
+        "sentence": "这是Xiao Li的咖啡",
+        "pinyin1": "Zhè shì Xiǎo Lǐ de kāfēi."
+      }
+    ],
+    "english": ["This is Xiao Li’s coffee"]
+  },
+  {
+    "chinese": [
+      {
+        "sentence": "我想叫王林‘老王’。",
+        "pinyin": "Wǒ xiǎng jiào Wáng Lín ‘Lǎo Wáng’."
+      }
+    ],
+    "english": ["I want to call Wang Lin ‘Lao Wang’"]
+  },
+  {
+    "chinese": [
+      { "sentence": "他想喝一杯咖啡。", "pinyin": "Tā xiǎng hē yī bēi kāfēi." }
+    ],
+    "english": [
+      "He'd like to have a cup of coffee",
+      "(lit. \"He wants to drink a cup of coffee\")"
+    ]
+  },
+  {
+    "chinese": [
+      { "sentence": "我不是王林。", "pinyin": "Wǒ bú shì Wáng Lín." }
+    ],
+    "english": ["I am not Wang Lin"]
+  },
+  {
+    "chinese": [
+      { "sentence": "她不想来中国。", "pinyin": "Tā bù xiǎng lái Zhōngguó." }
+    ],
+    "english": ["She doesn't want to come to China"]
+  },
+  {
+    "chinese": [
+      { "sentence": "他们很不高兴。", "pinyin": "Tāmen hěn bù gāoxìng." }
+    ],
+    "english": ["They are very unhappy"]
+  },
+  {
+    "chinese": [
+      { "sentence": "他们不很高兴。", "pinyin": "Tāmen bù hěn gāoxìng." }
+    ],
+    "english": ["They are not very happy"]
+  },
+  {
+    "chinese": [{ "sentence": "很累。", "pinyin": "Hěn lèi." }],
+    "english": ["Very tired"]
+  },
+  {
+    "chinese": [{ "sentence": "不累。", "pinyin": "Bú lèi." }],
+    "english": ["Not tired"]
+  },
+  {
+    "chinese": [{ "sentence": "想，谢谢。", "pinyin": "Xiǎng, xièxie." }],
+    "english": ["Yes, thank you", "(lit. \"would like to, thanks\")"]
+  },
+  {
+    "chinese": [{ "sentence": "不想，谢谢。", "pinyin": "Bù xiǎng, xièxie." }],
+    "english": ["No, thank you", "(lit. \"would not like to, thanks\")"]
+  },
+  {
+    "chinese": [{ "sentence": "太好了。", "pinyin": "Tài hǎo le." }],
+    "english": ["Extremely good"]
+  },
+  {
+    "chinese": [
+      { "sentence": "我太想喝咖啡了。", "pinyin": "Wǒ tài xiǎng hē kāfēi le." }
+    ],
+    "english": [
+      "I’d very much like to have a coffee.",
+      "(lit. \"I very much want to drink coffee\")"
+    ]
+  },
+  {
+    "chinese": [{ "sentence": "不太累。", "pinyin": "Bú tài lèi." }],
+    "english": ["Not too tired.", "(lit. \"Extremely not tired\")"]
+  },
+  {
+    "chinese": [{ "sentence": "不太顺利。", "pinyin": "Bú tài shùnlì." }],
+    "english": ["Not too smooth.", "(lit. \"Extremely not smooth/nice\")"]
+  },
+
+  {
+    "chinese": [
+      { "sentence": "你一路顺利吗？", "pinyin": "Nǐ yīlù shùnlì ma?" }
+    ],
+    "english": [
+      "Did you have a nice trip?",
+      "(lit. \"Your journey smooth/nice?\")"
+    ]
+  },
+  {
+    "chinese": [
+      { "sentence": "很顺利，谢谢。", "pinyin": "Hěn shùnlì, xièxie." }
+    ],
+    "english": ["Very smooth/nice, thank you."]
+  },
+  {
+    "chinese": [{ "sentence": "你累吗？", "pinyin": "Nǐ lèi ma?" }],
+    "english": ["Are you tired?"]
+  },
+  {
+    "chinese": [{ "sentence": "有一点儿累。", "pinyin": "Yǒu yī diǎnér lèi." }],
+    "english": ["A little bit tired."]
+  },
+  {
+    "chinese": [
+      { "sentence": "你想喝杯咖啡吗？", "pinyin": "Nǐ xiǎng hē bēi kāfēi ma?" }
+    ],
+    "english": [
+      "Would you like to have a coffee?",
+      "(lit. \"You would like to drink cup of coffee?\")"
+    ]
+  },
+  {
+    "chinese": [{ "sentence": "太想了。", "pinyin": "Tài xiǎng le." }],
+    "english": [
+      "That would be lovely.",
+      "I want it very much",
+      "(lit. \"Want it very much\")"
+    ]
+  },
+  {
+    "chinese": [
+      {
+        "sentence": "这是你的咖啡，大卫。",
+        "pinyin": "Zhè shì nǐde kāfēi, Dàwèi."
+      }
+    ],
+    "english": [
+      "Here’s your coffee, David.",
+      "(lit. \"This is your coffee, David\")"
+    ]
+  },
+  {
+    "chinese": [{ "sentence": "谢谢。", "pinyin": "Xièxie." }],
+    "english": ["Thank you."]
+  },
+  {
+    "chinese": [{ "sentence": "不客气。", "pinyin": "Bú kèqi." }],
+    "english": ["You’re welcome."]
+  },
+
+  {
+    "chinese": [{ "sentence": "我会说英语。", "pinyin": "Wǒ huì shuō Yīngyǔ" }],
+    "english": ["I can speak English"]
+  },
+  {
+    "chinese": [
+      {
+        "sentence": "我会说一点儿中文。",
+        "pinyin": "Wǒ huì shuō yī diǎnér Zhōngwén"
+      }
+    ],
+    "english": ["I can speak a little Chinese"]
+  },
+  {
+    "chinese": [
+      { "sentence": "我也会说中文。", "pinyin": "Wǒ yě huì shuō Zhōngwén" }
+    ],
+    "english": ["I can also speak Chinese"]
+  },
+  {
+    "chinese": [
+      {
+        "sentence": "我会说中文和英语。",
+        "pinyin": "Wǒ huì shuō Zhōngwén hé Yíngyǔ"
+      }
+    ],
+    "english": ["I can speak Chinese and English"]
+  },
+  {
+    "chinese": [
+      { "sentence": "我的中文很好。", "pinyin": "Wǒde Zhōngwén hěn hǎo" }
+    ],
+    "english": ["My Chinese is good"]
+  },
+  {
+    "chinese": [
+      {
+        "sentence": "艾米会说一点儿中文。",
+        "pinyin": "Aìmǐ huì shuō yī diǎnér Zhōngwén"
+      }
+    ],
+    "english": ["Amy can speak a little Chinese"]
+  },
+  {
+    "chinese": [
+      {
+        "sentence": "我的中文有一点儿好。",
+        "pinyin": "Wǒde Zhōngwén yǒu yī diǎnér hǎo"
+      }
+    ],
+    "english": [
+      "My Chinese is somewhat good",
+      "(lit. \"My Chinese is a little good\")"
+    ]
+  },
+  {
+    "chinese": [
+      { "sentence": "你的中文好吗？", "pinyin": "Nǐde Zhōngwén hǎo ma?" }
+    ],
+    "english": ["Is your chinese good?"]
+  },
+  {
+    "chinese": [
+      { "sentence": "你叫什么？", "pinyin": "Nǐ jiào shénme?" },
+      { "sentence": "你叫什么名字？", "pinyin": "Nǐ jiáo shénme míngzi?" },
+      { "sentence": "你的名字是什么？", "pinyin": "Nǐde míngzi shì shénme?" }
+    ],
+    "english": ["What's your name?"]
+  },
+  {
+    "chinese": [
+      {
+        "sentence": "你知道他叫什么名字吗？",
+        "pinyin": "Nǐ zhīdào tā jiào shénme míngzi ma?"
+      }
+    ],
+    "english": ["Do you know what his name is?"]
+  },
+  {
+    "chinese": [
+      { "sentence": "我的名字是Bran。", "pinyin": "Wǒde míngzi shì Bran" }
+    ],
+    "english": ["My name is Bran"]
+  },
+  {
+    "chinese": [{ "sentence": "你是哪国人？", "pinyin": "Nǐ shì nǎ guó rén?" }],
+    "english": ["Where are you from?"]
+  },
+  {
+    "chinese": [
+      { "sentence": "你是德国哪里人？", "pinyin": "Nǐ shì Déguó nǎlǐ rén?" }
+    ],
+    "english": ["Which place in Germany are you from?"]
+  },
+  {
+    "chinese": [{ "sentence": "我是英国人。", "pinyin": "Wǒ shì Yīngguó rén" }],
+    "english": ["I am British"]
+  },
+  {
+    "chinese": [
+      { "sentence": "艾米不是英国人。", "pinyin": "Aìmǐ búshì Yīngguó rén" }
+    ],
+    "english": ["Amy is not British"]
+  },
+  {
+    "chinese": [{ "sentence": "我是荷兰人。", "pinyin": "Wǒ shì Hélán rén" }],
+    "english": ["I am Dutch"]
+  },
+  {
+    "chinese": [
+      { "sentence": "艾米是美国人。", "pinyin": "Aìmǐ shì Měiguórén" }
+    ],
+    "english": ["Amy is from the US"]
+  },
+  {
+    "chinese": [
+      { "sentence": "我是鹿特丹人。", "pinyin": "Wǒ shì Lutedan rén" }
+    ],
+    "english": ["I am from Rotterdam"]
+  },
+  {
+    "chinese": [{ "sentence": "哪里哪里。", "pinyin": "Nǎlǐ nǎlǐ" }],
+    "english": ["Not really.", "Play down a compliment (polite)"]
+  },
+  {
+    "chinese": [{ "sentence": "我知道。", "pinyin": "Wǒ zhīdào" }],
+    "english": ["I know"]
+  },
+  {
+    "chinese": [{ "sentence": "你知道什么？", "pinyin": "Nǐ zhīdào shénme?" }],
+    "english": ["Do you know something"]
+  },
+  {
+    "chinese": [
+      { "sentence": "我猜你知道了。", "pinyin": "Wǒ cāi nǐ zhīdào le" }
+    ],
+    "english": ["I guess you knew", "I guess you already know"]
+  },
+  {
+    "chinese": [{ "sentence": "你猜吧。", "pinyin": "Nǐ cāi ba" }],
+    "english": ["Please guess", "Have a guess (polite)"]
+  },
+  {
+    "chinese": [{ "sentence": "我不想猜。", "pinyin": "Wǒ bù xiǎng cāi" }],
+    "english": ["I don’t want to guess"]
+  },
+
+  {
+    "chinese": [
+      { "sentence": "你会说中文吗？", "pinyin": "Nì huì shuō Zhōngwén ma?" }
+    ],
+    "english": ["Can you speak Chinese?"]
+  },
+  {
+    "chinese": [
+      { "sentence": "会说一点儿。", "pinyin": "Huì shuō yī diǎnér." }
+    ],
+    "english": ["Just a little.", "(lit. \"\")"]
+  },
+  {
+    "chinese": [{ "sentence": "太好了。", "pinyin": "Tài hǎo le." }],
+    "english": ["Wonderful.", "(lit. \"extremely good\")"]
+  },
+  {
+    "chinese": [{ "sentence": "我叫方春。", "pinyin": "Wǒ jiào Fāng Chūn." }],
+    "english": ["My name is Fang Chun."]
+  },
+  {
+    "chinese": [
+      { "sentence": "叫我小方吧。", "pinyin": "Jiào wǒ Xiǎo Fāng ba." }
+    ],
+    "english": ["Please call me Xiao Fang.", "(lit. \"\")"]
+  },
+  {
+    "chinese": [{ "sentence": "我叫艾米。", "pinyin": "Wǒ jiào Àimǐ." }],
+    "english": ["My name is Amy."]
+  },
+  {
+    "chinese": [
+      { "sentence": "你是英国人吗？", "pinyin": "Nì shì Yīngguórén ma?" }
+    ],
+    "english": ["Are you British?"]
+  },
+  {
+    "chinese": [{ "sentence": "不是。", "pinyin": "Bú shì." }],
+    "english": ["No."]
+  },
+  {
+    "chinese": [{ "sentence": "你猜。", "pinyin": "Nì cāi." }],
+    "english": ["Have a guess."]
+  },
+  {
+    "chinese": [{ "sentence": "我不知道。", "pinyin": "Wǒ bù zhīdào." }],
+    "english": ["I don’t know."]
+  },
+  {
+    "chinese": [{ "sentence": "我是美国人。", "pinyin": "Wǒ shì Měiguórén." }],
+    "english": ["I’m from the US."]
+  },
+  {
+    "chinese": [
+      {
+        "sentence": "你是哪里人，小方？",
+        "pinyin": "Nǐ shì nǎli rén, Xiǎo Fāng?"
+      }
+    ],
+    "english": ["Whereabouts do you come from, Xiao Fang?"]
+  },
+  {
+    "chinese": [{ "sentence": "我是北京人。", "pinyin": "Wǒ shì Běijīngrén." }],
+    "english": ["I’m from Beijing."]
+  },
+  {
+    "chinese": [
+      { "sentence": "你的中文很好。", "pinyin": "Nǐde Zhōngwén hěn hǎo." }
+    ],
+    "english": ["Your Chinese is very good."]
+  }
+]

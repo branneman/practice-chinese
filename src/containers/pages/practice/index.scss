@@ -1,0 +1,96 @@
+@keyframes correct-fadeout {
+  from {
+    background-color: lightgreen;
+  }
+  to {
+    background-color: transparent;
+  }
+}
+@keyframes incorrect-fadeout {
+  from {
+    background-color: tomato;
+  }
+  to {
+    background-color: transparent;
+  }
+}
+
+.section {
+  &--correct {
+    animation: 0.5s correct-fadeout;
+  }
+  &--incorrect {
+    animation: 0.5s incorrect-fadeout;
+  }
+
+  &--read-practice {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding-top: 2em;
+  }
+}
+
+.assignment-description {
+  margin-bottom: 1em;
+  text-align: center;
+
+  &--header {
+    font-size: 0.8em;
+    opacity: 0.8;
+  }
+}
+.assignment-result {
+  margin-top: 2em;
+  font-size: 2em;
+  text-align: center;
+}
+.assignment-text {
+  font-size: 2em;
+  text-align: center;
+}
+.assignment-text--smaller {
+  font-size: 1.6em;
+}
+
+.practice-input {
+  width: 100%;
+  padding: 0.5em 0.3em;
+  font-size: 1.2em;
+}
+
+.cta {
+  display: block;
+  width: 100%;
+  margin: 1em 0 0 0;
+  border: 0;
+  padding: 0.5em;
+
+  font-size: 1.4em;
+  font-weight: bold;
+  color: #fff;
+  background: forestgreen;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  &--smaller {
+    font-size: 1.25em;
+  }
+}
+.cta--next {
+  position: absolute;
+  bottom: 0;
+
+  display: block;
+  width: 100%;
+  margin: 0;
+  border: 0;
+  padding: 0.5em;
+
+  font-size: 1.4em;
+  font-weight: bold;
+  color: #fff;
+  background: forestgreen;
+  text-transform: uppercase;
+  cursor: pointer;
+}

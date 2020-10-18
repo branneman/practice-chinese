@@ -1,0 +1,412 @@
+[
+  {
+    "chinese": [{ "sentence": "我叫张明" }],
+    "english": ["I am Zhang Ming"]
+  },
+  {
+    "chinese": [{ "sentence": "叫我张" }],
+    "english": ["Call me Zhang"]
+  },
+  {
+    "chinese": [{ "sentence": "叫我李" }],
+    "english": ["Call me Li"]
+  },
+  {
+    "chinese": [{ "sentence": "叫我李华" }],
+    "english": ["Call me Li Hua"]
+  },
+  {
+    "chinese": [{ "sentence": "你叫王华吗？" }],
+    "english": ["Are you Wang Hua?"]
+  },
+  {
+    "chinese": [{ "sentence": "我叫李明" }],
+    "english": ["My name is Li Ming"]
+  },
+  {
+    "chinese": [{ "sentence": "我叫李明，你呢？" }],
+    "english": ["My name is Li Ming, what's yours?"]
+  },
+  {
+    "chinese": [{ "sentence": "你叫明" }],
+    "english": ["Your name is Ming"]
+  },
+  {
+    "chinese": [{ "sentence": "我姓明" }],
+    "english": ["My last name is Ming"]
+  },
+  {
+    "chinese": [{ "sentence": "我姓王，你呢？" }],
+    "english": ["My last name is Wang, what's yours?"]
+  },
+  {
+    "chinese": [{ "sentence": "我姓王，我叫王明" }],
+    "english": ["My last name is Wang, my name is Wang Ming"]
+  },
+  {
+    "chinese": [{ "sentence": "你姓张" }],
+    "english": ["Your last name is Zhang"]
+  },
+  {
+    "chinese": [{ "sentence": "我叫李华，你叫什么？" }],
+    "english": ["My name is Li Hua, what's your name?"]
+  },
+  {
+    "chinese": [{ "sentence": "你姓李，我姓王" }],
+    "english": ["Your last name is Li, my last name is Wang"]
+  },
+  {
+    "chinese": [{ "sentence": "他姓李" }],
+    "english": ["His last name is Li"]
+  },
+  {
+    "chinese": [{ "sentence": "他姓李，对吗？" }],
+    "english": ["His last name is Li, right?"]
+  },
+  {
+    "chinese": [{ "sentence": "你叫什么？" }],
+    "english": ["What is your name?"]
+  },
+  {
+    "chinese": [{ "sentence": "你姓什么？" }],
+    "english": ["What is your last name?"]
+  },
+  {
+    "chinese": [{ "sentence": "她叫什么？" }],
+    "english": ["What is her name?"]
+  },
+  {
+    "chinese": [{ "sentence": "老师姓什么？" }],
+    "english": ["What is the teacher's last name?"]
+  },
+  {
+    "chinese": [{ "sentence": "我也叫王" }],
+    "english": ["My name is also Wang"]
+  },
+  {
+    "chinese": [{ "sentence": "我也姓李" }],
+    "english": ["My last name is also Li"]
+  },
+  {
+    "chinese": [{ "sentence": "我名字叫明" }],
+    "english": ["My first name is Ming"]
+  },
+  {
+    "chinese": [{ "sentence": "她名字叫李" }],
+    "english": ["Her first name is Li"]
+  },
+  {
+    "chinese": [{ "sentence": "你名字叫华吗？" }],
+    "english": ["Is your first name Hua?"]
+  },
+  {
+    "chinese": [{ "sentence": "我们不姓王" }],
+    "english": ["Our last name isn't Wang"]
+  },
+  { "chinese": [{ "sentence": "你好！" }], "english": ["Hi!"] },
+  { "chinese": [{ "sentence": "再见！" }], "english": ["Bye!"] },
+  {
+    "chinese": [{ "sentence": "我很高兴" }],
+    "english": ["I am happy"]
+  },
+  {
+    "chinese": [{ "sentence": "我很高兴，你呢？" }],
+    "english": ["I am happy, how about you?"]
+  },
+  {
+    "chinese": [{ "sentence": "你很高兴吗？" }],
+    "english": ["Are you happy?"]
+  },
+  {
+    "chinese": [{ "sentence": "他们很高兴吗？" }],
+    "english": ["Are they happy?"]
+  },
+  {
+    "chinese": [{ "sentence": "他也很高兴" }],
+    "english": ["She is also happy"]
+  },
+  {
+    "chinese": [{ "sentence": "他不高兴" }],
+    "english": ["He is not happy"]
+  },
+  {
+    "chinese": [{ "sentence": "很高兴认识你" }],
+    "english": ["Nice to meet you"]
+  },
+  {
+    "chinese": [{ "sentence": "我也很高兴认识你" }],
+    "english": ["Nice to meet you too"]
+  },
+  {
+    "chinese": [{ "sentence": "我认识你" }],
+    "english": ["I know you"]
+  },
+  {
+    "chinese": [{ "sentence": "我认识张明" }],
+    "english": ["I know Zhang Ming"]
+  },
+  {
+    "chinese": [{ "sentence": "我认识你，你叫李明" }],
+    "english": ["I know you, you are Li Ming"]
+  },
+  {
+    "chinese": [{ "sentence": "我认识他" }],
+    "english": ["I know him"]
+  },
+  {
+    "chinese": [{ "sentence": "你认识王华吗？" }],
+    "english": ["Do you know Wang Hua?"]
+  },
+  {
+    "chinese": [{ "sentence": "你认识她吗？" }],
+    "english": ["Do you know her?"]
+  },
+  {
+    "chinese": [{ "sentence": "你认识他，对吗？" }],
+    "english": ["You know him, right?"]
+  },
+  {
+    "chinese": [{ "sentence": "你认识他们吗？" }],
+    "english": ["Do you know them?"]
+  },
+  {
+    "chinese": [{ "sentence": "他们认识你" }],
+    "english": ["They know you"]
+  },
+  {
+    "chinese": [{ "sentence": "他们认识你吗？" }],
+    "english": ["Do they know you?"]
+  },
+  {
+    "chinese": [{ "sentence": "谢谢" }],
+    "english": ["Thank you"]
+  },
+  {
+    "chinese": [{ "sentence": "我吃面" }],
+    "english": ["I eat noodles"]
+  },
+  {
+    "chinese": [{ "sentence": "我吃饭，你呢？" }],
+    "english": ["I eat rice, what about you?"]
+  },
+  {
+    "chinese": [{ "sentence": "我们不吃鱼" }],
+    "english": ["We do not eat fish"]
+  },
+  {
+    "chinese": [{ "sentence": "他们吃饭" }],
+    "english": ["They eat rice"]
+  },
+  {
+    "chinese": [{ "sentence": "你吃面吗？" }],
+    "english": ["Do you eat noodles?"]
+  },
+  {
+    "chinese": [{ "sentence": "你吃鱼吗？" }],
+    "english": ["Do you eat fish?"]
+  },
+  {
+    "chinese": [{ "sentence": "他们吃鱼吗？" }],
+    "english": ["Do they eat fish?"]
+  },
+  {
+    "chinese": [{ "sentence": "张明吃饭，你吃什么？" }],
+    "english": ["Zhang Ming eats rice, what do you eat?"]
+  },
+  {
+    "chinese": [{ "sentence": "我喝水" }],
+    "english": ["I drink water"]
+  },
+  {
+    "chinese": [{ "sentence": "我也不喝茶" }],
+    "english": ["I don't drink tea either"]
+  },
+  {
+    "chinese": [{ "sentence": "我是学生" }],
+    "english": ["I am a student"]
+  },
+  {
+    "chinese": [{ "sentence": "我是学生，你呢？" }],
+    "english": ["I am a student, what about you?"]
+  },
+  {
+    "chinese": [{ "sentence": "你是医生吗？" }],
+    "english": ["Are you a doctor?"]
+  },
+  {
+    "chinese": [{ "sentence": "你们是学生吗？" }],
+    "english": ["Are you students?"]
+  },
+  {
+    "chinese": [{ "sentence": "她是医生" }],
+    "english": ["She is a doctor"]
+  },
+  {
+    "chinese": [{ "sentence": "她也是医生" }],
+    "english": ["She is also a doctor"]
+  },
+  {
+    "chinese": [{ "sentence": "她是老师吗？" }],
+    "english": ["Is she a teacher?"]
+  },
+  {
+    "chinese": [{ "sentence": "他们是医生" }],
+    "english": ["They are doctors"]
+  },
+  {
+    "chinese": [{ "sentence": "他们不是学生" }],
+    "english": ["They aren't students"]
+  },
+  {
+    "chinese": [{ "sentence": "他们是学生吗？" }],
+    "english": ["Are they students?"]
+  },
+  {
+    "chinese": [{ "sentence": "他们不是学生吗？" }],
+    "english": ["Aren't they students?"]
+  },
+  {
+    "chinese": [{ "sentence": "我们是学生" }],
+    "english": ["We are students"]
+  },
+  {
+    "chinese": [{ "sentence": "我是中国人" }],
+    "english": ["I am Chinese"]
+  },
+  {
+    "chinese": [{ "sentence": "我们都是英国人" }],
+    "english": ["We are all British"]
+  },
+  {
+    "chinese": [{ "sentence": "对，我是英国人" }],
+    "english": ["Yes, I am British"]
+  },
+  {
+    "chinese": [{ "sentence": "你是哪国人？" }],
+    "english": ["Which country are you from?"]
+  },
+  {
+    "chinese": [{ "sentence": "你是中国人吗？" }],
+    "english": ["Are you Chinese?"]
+  },
+  {
+    "chinese": [{ "sentence": "你们都是中国人吗？" }],
+    "english": ["Are you all Chinese?"]
+  },
+  {
+    "chinese": [{ "sentence": "你是英国人吗？" }],
+    "english": ["Are you British?"]
+  },
+  {
+    "chinese": [{ "sentence": "你不是英国人吗？" }],
+    "english": ["Aren't you British?"]
+  },
+  {
+    "chinese": [{ "sentence": "你是英国人，对吗？" }],
+    "english": ["You are British, right?"]
+  },
+  {
+    "chinese": [{ "sentence": "他们都是英国人" }],
+    "english": ["They're all British"]
+  },
+  {
+    "chinese": [{ "sentence": "他们都是英国人，你呢？" }],
+    "english": ["They're all British, what about you?"]
+  },
+  {
+    "chinese": [{ "sentence": "他们是加拿大人吗？" }],
+    "english": ["Are they Canadian?"]
+  },
+  {
+    "chinese": [{ "sentence": "她也是加拿大人吗？" }],
+    "english": ["Is she also Canadian?"]
+  },
+  {
+    "chinese": [{ "sentence": "他不是美国人" }],
+    "english": ["He isn't American"]
+  },
+  {
+    "chinese": [{ "sentence": "不对，他不是美国人" }],
+    "english": ["No, he isn't American"]
+  },
+  {
+    "chinese": [{ "sentence": "他们也不是美国人" }],
+    "english": ["They aren't American either"]
+  },
+  {
+    "chinese": [{ "sentence": "王医生是哪国人？" }],
+    "english": ["Which country is doctor Wang from?"]
+  },
+  {
+    "chinese": [{ "sentence": "李老师是英国人" }],
+    "english": ["Teacher Li is British"]
+  },
+  {
+    "chinese": [{ "sentence": "他们都不是美国人" }],
+    "english": ["None of them are American"]
+  },
+  {
+    "chinese": [{ "sentence": "我的电话" }],
+    "english": ["My phone"]
+  },
+  {
+    "chinese": [{ "sentence": "你的电话" }],
+    "english": ["Your phone"]
+  },
+  {
+    "chinese": [{ "sentence": "他的电话" }],
+    "english": ["His phone"]
+  },
+  {
+    "chinese": [{ "sentence": "他的老师的电话" }],
+    "english": ["His teacher's phone"]
+  },
+  {
+    "chinese": [{ "sentence": "你的电话号码是多少？" }],
+    "english": ["What is your phone number?"]
+  },
+  {
+    "chinese": [{ "sentence": "她的电话号码是多少？" }],
+    "english": ["What is her phone number?"]
+  },
+  {
+    "chinese": [{ "sentence": "李老师的电话号码是多少？" }],
+    "english": ["What is teacher Li's phone number?"]
+  },
+  {
+    "chinese": [{ "sentence": "我的电话号码是八六三一六二四三零零八七" }],
+    "english": ["My phone number is +86-316-2430087"]
+  },
+  {
+    "chinese": [{ "sentence": "我的电话号码八六一八一九零八三六零零六" }],
+    "english": ["My phone number is +86-18190-836006"]
+  },
+  {
+    "chinese": [{ "sentence": "我的电话号码是零二零八五八五一四五二" }],
+    "english": ["My phone number is 020-85851452"]
+  },
+  {
+    "chinese": [{ "sentence": "我的电话号码是一五六四三八九三二四三" }],
+    "english": ["My phone number is 15643-893243"]
+  },
+  {
+    "chinese": [{ "sentence": "你的电话号码是零二零八五八五一四五二，对吗？" }],
+    "english": ["Your phone number is 020-85851452, right?"]
+  },
+  {
+    "chinese": [{ "sentence": "你的电话号码是一四七零二三五六二八三吗？" }],
+    "english": ["Is your phone number 14702-356283?"]
+  },
+  {
+    "chinese": [{ "sentence": "你的电话号码是零五一七八四一二五二一一吗？" }],
+    "english": ["Is your phone number 0517-84125211?"]
+  },
+  {
+    "chinese": [{ "sentence": "他的电话号码是零二零八五八五一四五二" }],
+    "english": ["His phone number is 020-85851452"]
+  },
+  {
+    "chinese": [{ "sentence": "她的电话号码是一六四五三三二八九三四吗？" }],
+    "english": ["Is her phone number 16453-328934?"]
+  }
+]
