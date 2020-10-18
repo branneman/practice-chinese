@@ -55,11 +55,11 @@ export default function Numbers() {
       const int = getSemiRandomInt()
       nextAction = () => checkAnswer(int)
       return (
-        <section className="section section--numbers-practice">
-          <p className="assignment-description">Translate to Chinese</p>
-          <p className="assignment-text">{int}</p>
-          <input ref={answerRef} className="practice-input" type="text" />
-          <button className="cta--next" onClick={nextAction}>
+        <section className='section section--numbers-practice'>
+          <p className='assignment-description'>Translate to Chinese</p>
+          <p className='assignment-text'>{int}</p>
+          <input ref={answerRef} className='practice-input' type='text' />
+          <button className='cta--next' onClick={nextAction}>
             Check
           </button>
         </section>
@@ -68,9 +68,14 @@ export default function Numbers() {
     case 'correct':
       nextAction = () => setState('question')
       return (
-        <section className="section section--correct section--numbers-practice">
-          <p className="assignment-result">Correct!</p>
-          <button className="cta--next" onClick={nextAction}>
+        <section className='section section--correct section--numbers-practice'>
+          <p className='assignment-result'>
+            <span role='img' aria-label='check'>
+              ✔
+            </span>{' '}
+            Correct!
+          </p>
+          <button className='cta--next' onClick={nextAction}>
             Continue
           </button>
         </section>
@@ -79,14 +84,19 @@ export default function Numbers() {
     case 'incorrect':
       nextAction = () => setState('question')
       return (
-        <section className="section section--incorrect section--numbers-practice">
-          <p className="assignment-result">Incorrect!</p>
+        <section className='section section--incorrect section--numbers-practice'>
+          <p className='assignment-result'>
+            <span role='img' aria-label='cross'>
+              ❌
+            </span>{' '}
+            Incorrect!
+          </p>
           {answers[answers.length - 1] && (
-            <p className="assignment-description">
+            <p className='assignment-description'>
               Correct answer: {answers[answers.length - 1].correct}
             </p>
           )}
-          <button className="cta--next" onClick={nextAction}>
+          <button className='cta--next' onClick={nextAction}>
             Continue
           </button>
         </section>
@@ -96,11 +106,11 @@ export default function Numbers() {
     case 'start':
       nextAction = () => setState('question')
       return (
-        <section className="section section--numbers-practice">
-          <p className="assignment-description">
+        <section className='section section--numbers-practice'>
+          <p className='assignment-description'>
             Translate arabic numbers to Chinese
           </p>
-          <button className="cta--next" onClick={nextAction}>
+          <button className='cta--next' onClick={nextAction}>
             Start
           </button>
         </section>

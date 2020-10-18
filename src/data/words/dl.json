@@ -1,0 +1,460 @@
+[
+  { "chinese": [{ "word": "元", "pinyin": "yuán" }], "english": ["yuan", "¥"] },
+  {
+    "chinese": [{ "word": "鬼子", "pinyin": "guǐ zi" }],
+    "english": ["westener", "devil", "enemy"]
+  },
+  {
+    "chinese": [{ "word": "哎呀", "pinyin": "āi ya" }],
+    "english": ["oh", "oops", "oh crap", "wtf"]
+  },
+  {
+    "chinese": [{ "word": "是的", "pinyin": "shì de" }],
+    "english": ["yes", "that's right", "(lit. \"is correct\")"]
+  },
+
+  { "chinese": [{ "word": "李", "pinyin": "lǐ" }], "english": ["Li (name)"] },
+  {
+    "chinese": [{ "word": "张", "pinyin": "zhāng" }],
+    "english": ["Zhang (name)"]
+  },
+  {
+    "chinese": [{ "word": "王", "pinyin": "wáng" }],
+    "english": ["Wang (name)"]
+  },
+  { "chinese": [{ "word": "华", "pinyin": "huā" }], "english": ["Hua (name)"] },
+  {
+    "chinese": [{ "word": "明", "pinyin": "míng" }],
+    "english": ["Ming (name)"]
+  },
+
+  { "chinese": [{ "word": "我", "pinyin": "wǒ" }], "english": ["I"] },
+  { "chinese": [{ "word": "你", "pinyin": "nǐ" }], "english": ["you"] },
+  {
+    "chinese": [{ "word": "您", "pinyin": "nín" }],
+    "english": ["you", "(formal, polite)"]
+  },
+  { "chinese": [{ "word": "他", "pinyin": "tā" }], "english": ["he", "him"] },
+  { "chinese": [{ "word": "她", "pinyin": "tā" }], "english": ["she", "her"] },
+  {
+    "chinese": [{ "word": "它", "pinyin": "tā" }],
+    "english": ["it (non-human)"]
+  },
+  {
+    "chinese": [{ "word": "我们", "pinyin": "wǒ men" }],
+    "english": ["we", "us"]
+  },
+  {
+    "chinese": [{ "word": "你们", "pinyin": "nǐ men" }],
+    "english": ["you (plural)"]
+  },
+  {
+    "chinese": [{ "word": "他们", "pinyin": "tā men" }],
+    "english": ["they", "them", "(masculine)"]
+  },
+  {
+    "chinese": [{ "word": "她们", "pinyin": "tā men" }],
+    "english": ["they", "them", "(feminine)"]
+  },
+  {
+    "chinese": [{ "word": "它们", "pinyin": "tā men" }],
+    "english": ["they", "them", "(non-human)"]
+  },
+
+  {
+    "chinese": [{ "word": "好", "pinyin": "hǎo" }],
+    "english": ["good", "great", "ok", "and"]
+  },
+  {
+    "chinese": [{ "word": "你好", "pinyin": "nǐ hǎo" }],
+    "english": ["hello", "how are you doing"]
+  },
+  {
+    "chinese": [{ "word": "再见", "pinyin": "zài jiàn" }],
+    "english": ["bye", "goodbye"]
+  },
+
+  {
+    "chinese": [{ "word": "叫", "pinyin": "jiào" }],
+    "english": ["is", "am", "call/calling"]
+  },
+  {
+    "chinese": [{ "word": "姓", "pinyin": "xìng" }],
+    "english": ["family name", "last name"]
+  },
+  {
+    "chinese": [{ "word": "什么", "pinyin": "shén me" }],
+    "english": ["what?"]
+  },
+  {
+    "chinese": [{ "word": "名字", "pinyin": "míng zì" }],
+    "english": ["name", "given name", "first name"]
+  },
+  {
+    "chinese": [{ "word": "你呢", "pinyin": "nǐ ne" }],
+    "english": ["what's yours", "how about you", "and you"]
+  },
+
+  {
+    "chinese": [{ "word": "也", "pinyin": "yě" }],
+    "english": ["also", "too", "and also"]
+  },
+  { "chinese": [{ "word": "很", "pinyin": "hěn" }], "english": ["very"] },
+  {
+    "chinese": [{ "word": "高兴", "pinyin": "gāo xìng" }],
+    "english": ["happy", "pleasure", "pleased"]
+  },
+  {
+    "chinese": [{ "word": "认识", "pinyin": "rèn shí" }],
+    "english": ["know", "to know", "to recognize", "knowledge"]
+  },
+
+  { "chinese": [{ "word": "吃", "pinyin": "chī" }], "english": ["eat"] },
+  {
+    "chinese": [{ "word": "面", "pinyin": "miàn" }],
+    "english": ["noodles", "face", "surface"]
+  },
+  {
+    "chinese": [{ "word": "饭", "pinyin": "fàn" }],
+    "english": ["rice", "eat"]
+  },
+  {
+    "chinese": [{ "word": "吃饭", "pinyin": "chī fàn" }],
+    "english": ["eat", "eat rice"]
+  },
+  { "chinese": [{ "word": "鱼", "pinyin": "yú" }], "english": ["fish"] },
+  { "chinese": [{ "word": "喝", "pinyin": "hē" }], "english": ["drink"] },
+  { "chinese": [{ "word": "茶", "pinyin": "chá" }], "english": ["tea"] },
+  { "chinese": [{ "word": "水", "pinyin": "shuǐ" }], "english": ["water"] },
+
+  {
+    "chinese": [{ "word": "是", "pinyin": "shì" }],
+    "english": ["is", "am", "are"]
+  },
+  { "chinese": [{ "word": "不", "pinyin": "bù" }], "english": ["not"] },
+  {
+    "chinese": [{ "word": "吗", "pinyin": "ma" }],
+    "english": ["[questionword]"]
+  },
+  {
+    "chinese": [{ "word": "学生", "pinyin": "xué shēng" }],
+    "english": ["student"]
+  },
+  {
+    "chinese": [{ "word": "医生", "pinyin": "yī shēng" }],
+    "english": ["doctor"]
+  },
+  {
+    "chinese": [{ "word": "老", "pinyin": "lǎo" }],
+    "english": ["old", "elderly"]
+  },
+  {
+    "chinese": [{ "word": "老师", "pinyin": "lǎo shī" }],
+    "english": ["teacher"]
+  },
+
+  {
+    "chinese": [{ "word": "的", "pinyin": "de" }],
+    "english": ["[possesive modifier]", "my", "mine", "for"]
+  },
+  {
+    "chinese": [{ "word": "电话", "pinyin": "diàn huà" }],
+    "english": ["phone"]
+  },
+  {
+    "chinese": [{ "word": "号码", "pinyin": "hào mǎ" }],
+    "english": ["numbers"]
+  },
+  {
+    "chinese": [{ "word": "多少", "pinyin": "duō shǎo" }],
+    "english": ["[questionword for numbers]", "[much/few?]", "how many"]
+  },
+  {
+    "chinese": [{ "word": "电话号码", "pinyin": "diàn huà hào mǎ" }],
+    "english": ["phone number"]
+  },
+  {
+    "chinese": [{ "word": "电", "pinyin": "diàn" }],
+    "english": ["electric", "electricity", "electrical", "lightning"]
+  },
+
+  {
+    "chinese": [{ "word": "人", "pinyin": "rén" }],
+    "english": ["person", "people", "individual"]
+  },
+  { "chinese": [{ "word": "国", "pinyin": "guó" }], "english": ["country"] },
+  {
+    "chinese": [{ "word": "中", "pinyin": "zhōng" }],
+    "english": ["central", "center", "middle", "within"]
+  },
+  {
+    "chinese": [{ "word": "国人", "pinyin": "guó rén" }],
+    "english": ["citizen", "(lit. \"country person\")"]
+  },
+  {
+    "chinese": [{ "word": "中国", "pinyin": "zhōng guó" }],
+    "english": ["china"]
+  },
+  {
+    "chinese": [{ "word": "英国", "pinyin": "yīng guó" }],
+    "english": ["british", "uk", "england"]
+  },
+  {
+    "chinese": [{ "word": "美国", "pinyin": "měi guó" }],
+    "english": ["america"]
+  },
+  {
+    "chinese": [{ "word": "加拿大", "pinyin": "jiā ná dà" }],
+    "english": ["canada"]
+  },
+  {
+    "chinese": [{ "word": "大", "pinyin": "dà" }],
+    "english": [
+      "big",
+      "huge",
+      "large",
+      "major",
+      "great",
+      "wide",
+      "vast",
+      "deep",
+      "oldest",
+      "eldest"
+    ]
+  },
+  {
+    "chinese": [{ "word": "都", "pinyin": "dōu" }],
+    "english": ["all", "both"]
+  },
+  {
+    "chinese": [{ "word": "对", "pinyin": "duì" }],
+    "english": ["correct (answer)"]
+  },
+
+  { "chinese": [{ "word": "忙", "pinyin": "máng" }], "english": ["busy"] },
+  {
+    "chinese": [{ "word": "今天", "pinyin": "jīn tiān" }],
+    "english": ["today", "this day"]
+  },
+  {
+    "chinese": [{ "word": "早上", "pinyin": "zǎo shang" }],
+    "english": ["morning"]
+  },
+  {
+    "chinese": [
+      { "word": "早上好", "pinyin": "zǎo shang hǎo" },
+      { "word": "早安", "pinyin": "zǎo ān" }
+    ],
+    "english": ["good morning"]
+  },
+  {
+    "chinese": [{ "word": "很好", "pinyin": "hěn hǎo" }],
+    "english": ["fine", "well", "good"]
+  },
+  {
+    "chinese": [{ "word": "怎么样", "pinyin": "zěn me yàng" }],
+    "english": ["how is/are?", "how about?"]
+  },
+
+  {
+    "chinese": [{ "word": "在", "pinyin": "zài" }],
+    "english": ["is in", "are in", "located in"]
+  },
+  {
+    "chinese": [{ "word": "家", "pinyin": "jiā" }],
+    "english": ["home", "house", "family"]
+  },
+  {
+    "chinese": [{ "word": "在家", "pinyin": "zài jiā" }],
+    "english": ["at home"]
+  },
+  {
+    "chinese": [{ "word": "住在", "pinyin": "zhù zài" }],
+    "english": ["live in"]
+  },
+  { "chinese": [{ "word": "哪儿", "pinyin": "nǎ er" }], "english": ["where"] },
+  {
+    "chinese": [{ "word": "北京", "pinyin": "běi jīng" }],
+    "english": ["Beijing"]
+  },
+  {
+    "chinese": [{ "word": "香港", "pinyin": "xiāng gǎng" }],
+    "english": ["Hong Kong"]
+  },
+  {
+    "chinese": [{ "word": "台湾", "pinyin": "tái wān" }],
+    "english": ["Taiwan"]
+  },
+  {
+    "chinese": [{ "word": "伦敦", "pinyin": "lùn dūn" }],
+    "english": ["London"]
+  },
+  {
+    "chinese": [{ "word": "纽约", "pinyin": "niǔ yuē" }],
+    "english": ["New York"]
+  },
+
+  {
+    "chinese": [{ "word": "客气", "pinyin": "kè qì" }],
+    "english": ["welcome", "polite"]
+  },
+  {
+    "chinese": [{ "word": "不客气", "pinyin": "bu kè qì" }],
+    "english": [
+      "you're welcome",
+      "(lit. \"you are too polite\", \"please don't thank me\")"
+    ]
+  },
+  {
+    "chinese": [{ "word": "谢谢", "pinyin": "xiè xiè" }],
+    "english": ["thanks", "to thank"]
+  },
+  {
+    "chinese": [{ "word": "对不起", "pinyin": "duì bù qǐ" }],
+    "english": ["I'm sorry", "unworthy", "(lit. \"I am incorrect to rise up\")"]
+  },
+  {
+    "chinese": [{ "word": "没关系", "pinyin": "méi guān xì" }],
+    "english": [
+      "no worries",
+      "it's ok",
+      "never mind",
+      "(lit. \"have not\" \"relationship\")"
+    ]
+  },
+
+  { "chinese": [{ "word": "爱", "pinyin": "ai" }], "english": ["love"] },
+  {
+    "chinese": [{ "word": "家人", "pinyin": "jiā rén" }],
+    "english": ["family"]
+  },
+  {
+    "chinese": [{ "word": "爸爸", "pinyin": "bà bà" }],
+    "english": ["dad", "father"]
+  },
+  {
+    "chinese": [{ "word": "妈妈", "pinyin": "mā mā" }],
+    "english": ["mom", "mother"]
+  },
+  {
+    "chinese": [{ "word": "哥哥", "pinyin": "gē gē" }],
+    "english": ["brother (older)"]
+  },
+  {
+    "chinese": [{ "word": "姐姐", "pinyin": "jiě jiě" }],
+    "english": ["sister (older)"]
+  },
+  {
+    "chinese": [{ "word": "弟弟", "pinyin": "dì dì" }],
+    "english": ["brother (younger)"]
+  },
+  {
+    "chinese": [{ "word": "妹妹", "pinyin": "mèi mèi" }],
+    "english": ["sister (younger"]
+  },
+
+  { "chinese": [{ "word": "清", "pinyin": "qǐng" }], "english": ["please"] },
+  { "chinese": [{ "word": "问", "pinyin": "wèn" }], "english": ["ask"] },
+  {
+    "chinese": [{ "word": "请问", "pinyin": "qǐng wèn" }],
+    "english": ["excuse me", "may I ask", "(lit. \"please ask\")"]
+  },
+  {
+    "chinese": [{ "word": "知道", "pinyin": "zhī dào" }],
+    "english": ["know", "knew"]
+  },
+  {
+    "chinese": [{ "word": "说", "pinyin": "shuō" }],
+    "english": ["say", "said", "speak", "spoken"]
+  },
+  {
+    "chinese": [{ "word": "汉语", "pinyin": "hàn yǔ" }],
+    "english": ["chinese"]
+  },
+  {
+    "chinese": [{ "word": "英语", "pinyin": "yīng yǔ" }],
+    "english": ["english"]
+  },
+  {
+    "chinese": [{ "word": "帮助", "pinyin": "bāng zhù" }],
+    "english": ["help"]
+  },
+  {
+    "chinese": [{ "word": "一次", "pinyin": "yí cì" }],
+    "english": ["once", "a", "(lit. \"one time\")"]
+  },
+  { "chinese": [{ "word": "次", "pinyin": "cì" }], "english": ["time"] },
+  { "chinese": [{ "word": "再", "pinyin": "zài" }], "english": ["again"] },
+  {
+    "chinese": [{ "word": "和", "pinyin": "hé" }],
+    "english": ["he", "with", "to"]
+  },
+  {
+    "chinese": [{ "word": "一个", "pinyin": "yī gè" }],
+    "english": ["a", "one"]
+  },
+  {
+    "chinese": [{ "word": "这", "pinyin": "zhè" }],
+    "english": ["this", "here's"]
+  },
+  { "chinese": [{ "word": "那", "pinyin": "nà" }], "english": ["that"] },
+  { "chinese": [{ "word": "谁", "pinyin": "shéi" }], "english": ["who"] },
+  {
+    "chinese": [{ "word": "有", "pinyin": "yǒu" }],
+    "english": ["have", "there are", "with"]
+  },
+  {
+    "chinese": [{ "word": "没有", "pinyin": "méi yǒu" }],
+    "english": ["doesn't have", "haven't"]
+  },
+
+  {
+    "chinese": [{ "word": "最", "pinyin": "zuì" }],
+    "english": ["most", "best (before adjective)"]
+  },
+  {
+    "chinese": [{ "word": "最近", "pinyin": "zuì jìn" }],
+    "english": ["recently", "these days"]
+  },
+  {
+    "chinese": [{ "word": "见", "pinyin": "jiàn" }],
+    "english": ["see", "meet"]
+  },
+  {
+    "chinese": [{ "word": "会儿", "pinyin": "huì ér" }],
+    "english": ["moment"]
+  },
+  {
+    "chinese": [{ "word": "一会儿", "pinyin": "yī huì ér" }],
+    "english": ["in a bit", "in a moment", "later"]
+  },
+  {
+    "chinese": [{ "word": "晚安", "pinyin": "wǎn ān" }],
+    "english": ["good night", "good evening"]
+  },
+  { "chinese": [{ "word": "错", "pinyin": "cuò" }], "english": ["fault"] },
+  {
+    "chinese": [{ "word": "不错", "pinyin": "bù cuò" }],
+    "english": ["not bad", "well", "fine", "correct", "pretty good"]
+  },
+  { "chinese": [{ "word": "久", "pinyin": "jiǔ" }], "english": ["long time"] },
+  {
+    "chinese": [{ "word": "好久不见", "pinyin": "hǎo jiǔ bù jiàn" }],
+    "english": ["long time no see", "(lit. \"good long time to see\")"]
+  },
+
+  {
+    "chinese": [{ "word": "要", "pinyin": "yào" }],
+    "english": ["wants, needs, have to"]
+  },
+  { "chinese": [{ "word": "冰", "pinyin": "bīng" }], "english": ["ice, iced"] },
+  {
+    "chinese": [{ "word": "热", "pinyin": "rè" }],
+    "english": ["hot, hotter, heat"]
+  },
+  {
+    "chinese": [{ "word": "咖啡", "pinyin": "kā fēi" }],
+    "english": ["coffee"]
+  },
+  { "chinese": [{ "word": "牛奶", "pinyin": "niú nǎi" }], "english": ["milk"] }
+]
