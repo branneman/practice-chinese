@@ -1,0 +1,317 @@
+[
+  {
+    "chinese": [{ "sentence": "你怎么样？", "pinyin": "Nǐ zěnmeyàng?" }],
+    "english": ["How are you?"]
+  },
+  {
+    "chinese": [{ "sentence": "我没事", "pinyin": "Wǒ méishì" }],
+    "english": ["No problem", "Nothing is wrong"]
+  },
+  {
+    "chinese": [
+      { "sentence": "我要一杯啤酒", "pinyin": "Wǒ yào yī bēi píjiǔ" }
+    ],
+    "english": ["I want one glass of beer."]
+  },
+  {
+    "chinese": [
+      { "sentence": "我三十三岁了。", "pinyin": "Wǒ sānshísān suì le." }
+    ],
+    "english": ["I am 33 years old."]
+  },
+  {
+    "chinese": [
+      { "sentence": "今年她十六岁了", "pinyin": "Jīnnián tā shíliù suì le" }
+    ],
+    "english": ["This year she is 16."]
+  },
+  {
+    "chinese": [
+      { "sentence": "你多大了？", "pinyin": "Nǐ duōdà le?" },
+      { "sentence": "你今年多大了？", "pinyin": "Nǐ jīnnián duōdà le?" },
+      { "sentence": "今年你多大了？", "pinyin": "Jīnnián nǐ duōdà le?" }
+    ],
+    "english": ["How old are you?", "(friendly)"]
+  },
+  {
+    "chinese": [{ "sentence": "你几岁了？", "pinyin": "Nǐ jǐ suì le?" }],
+    "english": ["How old are you?", "(small children)"]
+  },
+  {
+    "chinese": [{ "sentence": "对吗？", "pinyin": "Duì ma?" }],
+    "english": ["Right?"]
+  },
+  {
+    "chinese": [{ "sentence": "真的吗？", "pinyin": "Zhēnde ma?" }],
+    "english": ["Really?"]
+  },
+  {
+    "chinese": [
+      {
+        "sentence": "你是高先生，对吗？",
+        "pinyin": "Nǐ shì Gāo xiānsheng, duì ma?"
+      }
+    ],
+    "english": ["You are Mr. Gao, right?"]
+  },
+  {
+    "chinese": [{ "sentence": "你说的对。", "pinyin": "Nǐ shuōde duì." }],
+    "english": ["You are right"]
+  },
+  {
+    "chinese": [
+      { "sentence": "你40岁了，真的吗？", "pinyin": "Nǐ 40 suì le, zhēnde ma?" }
+    ],
+    "english": ["You are 40 years old, really?"]
+  },
+  {
+    "chinese": [{ "sentence": "您过奖了。", "pinyin": "Nǐn guòjiǎng le." }],
+    "english": ["I'm flattered"]
+  },
+  {
+    "chinese": [
+      {
+        "sentence": "你看上去25岁左右。",
+        "pinyin": "Nǐ kànshàngqù 25 suì zuǒyòu."
+      }
+    ],
+    "english": ["You look about 25 years old."]
+  },
+  {
+    "chinese": [
+      {
+        "sentence": "Jane看上去很高兴。",
+        "pinyin": "Jane kànshàngqù hěn gāoxìng."
+      }
+    ],
+    "english": ["Jane looks happy."]
+  },
+  {
+    "chinese": [
+      { "sentence": "Tom看上去很累。", "pinyin": "Tom kànshàngqù hěn lèi." }
+    ],
+    "english": ["Tom looks tired."]
+  },
+  {
+    "chinese": [
+      {
+        "sentence": "王先生应该知道。",
+        "pinyin": "Wáng xiānsheng yīnggāi zhīdào."
+      }
+    ],
+    "english": ["Mr. Wang must know."]
+  },
+  {
+    "chinese": [{ "sentence": "大卫应该来。", "pinyin": "Dàwèi yīnggāi lái." }],
+    "english": ["David should come."]
+  },
+  {
+    "chinese": [
+      { "sentence": "这么说你不很累。", "pinyin": "Zhèmeshuō nǐ bù hěn lèi." }
+    ],
+    "english": ["In that case you are not tired."]
+  },
+  {
+    "chinese": [
+      {
+        "sentence": "你不应该认识艾米。",
+        "pinyin": "Nǐ bù yīnggāi rènshi Àimǐ."
+      }
+    ],
+    "english": ["You mustn't know Amy."]
+  },
+  {
+    "chinese": [
+      { "sentence": "请慢一点儿说。", "pinyin": "Qǐng màn yīdiǎnér shuō." },
+      { "sentence": "请说慢一点儿。", "pinyin": "Qǐng shuō màn yīdiǎnér." }
+    ],
+    "english": ["Please speak more slowly.", "(polite)"]
+  },
+  {
+    "chinese": [
+      { "sentence": "说慢一点儿吧。", "pinyin": "Shuō màn yīdiǎnér ba." }
+    ],
+    "english": ["Please speak more slowly.", "(friendly)"]
+  },
+  {
+    "chinese": [
+      {
+        "sentence": "我们知道艾米什么？",
+        "pinyin": "Wǒmen zhīdào àimǐ shénme?"
+      }
+    ],
+    "english": ["What do we know about Amy?"]
+  },
+  {
+    "chinese": [{ "sentence": "我也是。", "pinyin": "Wǒ yě shì." }],
+    "english": ["Me too"]
+  },
+  {
+    "chinese": [
+      {
+        "sentence": "小方看上去很年轻。",
+        "pinyin": "Xiǎo Fāng kànshàngqù hěn niánqīng."
+      }
+    ],
+    "english": ["Xiao Fang looks very young."]
+  },
+  {
+    "chinese": [
+      {
+        "sentence": "你看上去有一点儿累。",
+        "pinyin": "Nǐ kànshàngqù yǒu yīdiǎnér lèi."
+      }
+    ],
+    "english": ["You look a little tired."]
+  },
+  {
+    "chinese": [
+      {
+        "sentence": "小方看上去不太高兴。",
+        "pinyin": "Xiǎo Fāng kànshàngqù bù tài gāoxìng."
+      }
+    ],
+    "english": ["Xiao Fang doesn’t look very happy."]
+  },
+  {
+    "chinese": [
+      { "sentence": "张经理四十左右。", "pinyin": "Zhāng jīnglǐ sìshí zuǒyòu." }
+    ],
+    "english": ["Manager Zhang is about forty."]
+  },
+  {
+    "chinese": [
+      {
+        "sentence": "你看上去很精深。",
+        "pinyin": "Nǐ kànshàngqù hěn jīngshen."
+      }
+    ],
+    "english": ["You look very smart.", "You look very sophisticated."]
+  },
+  {
+    "chinese": [
+      { "sentence": "您过，您过。", "pinyin": "Guòjiǎng, guòjiǎng." }
+    ],
+    "english": ["I’m flattered."]
+  },
+  {
+    "chinese": [
+      {
+        "sentence": "认识你，我很高兴。",
+        "pinyin": "Rènshi nǐ, wǒ hěn gāoxìng."
+      }
+    ],
+    "english": ["I’m very pleased to have met you."]
+  },
+  {
+    "chinese": [
+      {
+        "sentence": "来中国，我很高兴。",
+        "pinyin": "Lái Zhōngguó, wǒ hěn gāoxìng."
+      }
+    ],
+    "english": ["I’m so happy that I’ve come to China."]
+  },
+  {
+    "chinese": [
+      {
+        "sentence": "我不知道她认识艾米。",
+        "pinyin": "Wǒ bù zhīdào tā rènshi Àimǐ."
+      }
+    ],
+    "english": ["I didn’t know that she knew Amy."]
+  },
+
+  {
+    "chinese": [
+      {
+        "sentence": "小方，你今年多大了？",
+        "pinyin": "Xiǎo Fāng, nǐ jīnnián duōdà le?"
+      }
+    ],
+    "english": ["Xiao Fang, how old are you this year?"]
+  },
+  {
+    "chinese": [
+      { "sentence": "我三十二岁了。", "pinyin": "Wǒ sānshíèr suì le." }
+    ],
+    "english": ["I’m thirty-two years old."]
+  },
+  {
+    "chinese": [
+      {
+        "sentence": "真的？你看上去二十五岁左右。",
+        "pinyin": "Zhēnde? Nǐ kànshàngqù èrshíwǔ suì zuǒyòu."
+      }
+    ],
+    "english": ["Really? You look about twenty-five."]
+  },
+  {
+    "chinese": [
+      { "sentence": "过奖。你多大了？", "pinyin": "Guòjiǎng. Nǐ duōdà le?" }
+    ],
+    "english": ["I’m flattered. How old are you?"]
+  },
+  {
+    "chinese": [{ "sentence": "我二十一。", "pinyin": "Wǒ èrshíyī." }],
+    "english": ["I’m twenty-one years old."]
+  },
+  {
+    "chinese": [
+      {
+        "sentence": "你真年轻。这么说，我应该是老方。",
+        "pinyin": "Nǐ zhēn niánqīng. Zhème shuō, wǒ yīnggāi shì Lǎo Fāng."
+      }
+    ],
+    "english": ["You are really young. In that case, I should be ‘old Fang’."]
+  },
+  {
+    "chinese": [
+      {
+        "sentence": "对不起，请慢一点儿说。",
+        "pinyin": "Duìbuqǐ, qǐng màn yīdiǎnér shuō."
+      }
+    ],
+    "english": ["Excuse me, please say it slowly."]
+  },
+  {
+    "chinese": [
+      { "sentence": "我应该是老方。", "pinyin": "Wǒ yīnggāi shì Lǎo Fāng." }
+    ],
+    "english": ["I should be ‘old Fang’."]
+  },
+  {
+    "chinese": [
+      {
+        "sentence": "不对，不对。你是小方。",
+        "pinyin": "Bú duì, bú duì. Nǐ shì ‘Xiǎo Fāng’."
+      }
+    ],
+    "english": ["No, no. You are ‘young Fang’."]
+  },
+  {
+    "chinese": [
+      {
+        "sentence": "认识你，我很高兴，艾米。",
+        "pinyin": "Rènshi nǐ, wǒ hěn gāoxìng, Aìmǐ."
+      }
+    ],
+    "english": ["I’m pleased that I’ve got to know you, Amy."]
+  },
+  {
+    "chinese": [
+      { "sentence": "我也是，小方。", "pinyin": "Wǒ yě shì, Xiǎo Fāng." }
+    ],
+    "english": ["Me too, Xiao Fang."]
+  },
+  {
+    "chinese": [{ "sentence": "再见，艾米。", "pinyin": "Zàijiàn, Aìmǐ." }],
+    "english": ["Goodbye Amy."]
+  },
+  {
+    "chinese": [
+      { "sentence": "再见，小方。", "pinyin": "Zàijiàn, Xiǎo Fāng." }
+    ],
+    "english": ["Bye, Xiao Fang."]
+  }
+]

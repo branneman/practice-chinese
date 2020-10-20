@@ -157,7 +157,7 @@ export default function PracticeReadPage() {
           </p>
           {direction.vocabs.map((vocab) => (
             <button className='cta' onClick={nextAction(vocab)}>
-              {vocab.toUpperCase()}
+              {vocab}
             </button>
           ))}
         </section>

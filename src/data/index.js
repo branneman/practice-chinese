@@ -44,7 +44,7 @@ export const fn = {
         // {
         //   id: 'character>radical',
         //   name: 'Character to Radical',
-        //   vocabs: ['hsk1'],
+        //   vocabs: ['HSK1'],
         //   list: (data, vocab) => data.characters[vocab],
         //   question: (x) => x.character,
         //   answers: (x) => [x.radical],
@@ -53,7 +53,7 @@ export const fn = {
         {
           id: 'character>pinyin',
           name: 'Character to Pinyin',
-          vocabs: ['hsk1'],
+          vocabs: ['HSK1'],
           list: (data, vocab) => data.characters[vocab],
           question: (x) => x.character,
           answers: (x) => [x.pinyin],
@@ -68,7 +68,7 @@ export const fn = {
         {
           id: 'english>characters',
           name: 'English to Characters',
-          vocabs: ['dl', 'eur', 'hsk1'],
+          vocabs: ['DL', 'EUR: All', 'HSK1'],
           list: (data, vocab) => data.words[vocab],
           question: (x) => join(', ', x.english),
           answers: (x) =>
@@ -82,7 +82,7 @@ export const fn = {
         {
           id: 'english>pinyin',
           name: 'English to Pinyin',
-          vocabs: ['dl', 'eur', 'hsk1'],
+          vocabs: ['DL', 'EUR: All', 'HSK1'],
           list: (data, vocab) => data.words[vocab],
           question: (x) => join(', ', x.english),
           answers: (x) =>
@@ -96,7 +96,7 @@ export const fn = {
         {
           id: 'characters>english',
           name: 'Characters to English',
-          vocabs: ['dl', 'eur', 'hsk1'],
+          vocabs: ['DL', 'EUR: All', 'HSK1'],
           list: (data, vocab) =>
             flatten(
               map(
@@ -111,7 +111,7 @@ export const fn = {
         {
           id: 'characters>pinyin',
           name: 'Characters to Pinyin',
-          vocabs: ['dl', 'eur', 'hsk1'],
+          vocabs: ['DL', 'EUR: All', 'HSK1'],
           list: (data, vocab) =>
             flatten(map(prop('chinese'), data.words[vocab])),
           question: (x) => x.word,
@@ -127,7 +127,7 @@ export const fn = {
         {
           id: 'english>characters',
           name: 'English to Characters',
-          vocabs: ['dl', 'eur'],
+          vocabs: ['DL', 'EUR: All', 'EUR: Lesson 4'],
           list: (data, vocab) => data.sentences[vocab],
           question: (x) => join(', ', x.english),
           answers: (x) =>
@@ -141,7 +141,7 @@ export const fn = {
         {
           id: 'english>pinyin',
           name: 'English to Pinyin',
-          vocabs: ['eur'],
+          vocabs: ['EUR: All', 'EUR: Lesson 4'],
           list: (data, vocab) => data.sentences[vocab],
           question: (x) => join(', ', x.english),
           answers: (x) =>
@@ -158,7 +158,7 @@ export const fn = {
         {
           id: 'characters>english',
           name: 'Characters to English',
-          vocabs: ['dl', 'eur'],
+          vocabs: ['DL', 'EUR: All', 'EUR: Lesson 4'],
           list: (data, vocab) => data.sentences[vocab],
           question: (x) => join('，', map(prop('sentence'), x.chinese)),
           answers: (x) => x.english,
@@ -167,7 +167,7 @@ export const fn = {
         {
           id: 'characters>pinyin',
           name: 'Characters to Pinyin',
-          vocabs: ['eur'],
+          vocabs: ['EUR: All', 'EUR: Lesson 4'],
           list: (data, vocab) =>
             flatten(map(prop('chinese'), data.sentences[vocab])),
           question: (x) => x.sentence,
@@ -177,7 +177,7 @@ export const fn = {
         {
           id: 'pinyin>english',
           name: 'Pinyin to English',
-          vocabs: ['eur'],
+          vocabs: ['EUR: All', 'EUR: Lesson 4'],
           list: (data, vocab) =>
             flatten(
               map(

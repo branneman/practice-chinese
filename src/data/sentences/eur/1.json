@@ -21,7 +21,7 @@
   },
   {
     "chinese": [
-      { "sentence": "很高兴见到你", "pinyin": "Hěn gāoxìng jiàndào nǐ" }
+      { "sentence": "很高兴见到你", "pinyin": "Hěn gāo xìng jiàndào nǐ" }
     ],
     "english": ["Nice to meet you"]
   },
@@ -29,7 +29,7 @@
     "chinese": [
       {
         "sentence": "我也很高兴见到你",
-        "pinyin": "Wǒ yě hěn gāoxìng jiàndào nǐ"
+        "pinyin": "Wǒ yě hěn gāo xìng jiàndào nǐ"
       }
     ],
     "english": ["Nice to meet you too"]
