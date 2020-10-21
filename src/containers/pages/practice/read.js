@@ -30,6 +30,7 @@ export const getResults = (answers) => {
 
 export default function PracticeReadPage() {
   const answerRef = useRef(null)
+  const tooltipRef = useRef(null)
 
   // const visualViewport = useVisualViewport()
 
@@ -72,6 +73,17 @@ export default function PracticeReadPage() {
     return () => window.removeEventListener('keyup', fn)
   })
 
+  const toggleTooltip = (tooltipRef) => {
+    const elem = tooltipRef.current
+    if (elem.style.display === 'block') {
+      elem.style.display = 'none'
+    } else {
+      elem.style.display = 'block'
+      const rect = elem.getBoundingClientRect()
+      elem.style.marginLeft = `-${Math.round(rect.width / 2)}px`
+    }
+  }
+
   let nextAction = () => 0
   switch (state) {
     case 'question':
@@ -79,9 +91,24 @@ export default function PracticeReadPage() {
       return (
         <section className='section section--read-practice'>
           <p className='assignment-description'>Translate {direction.name}</p>
-          <p className='assignment-text'>
-            {direction.question(answers[question])}
-          </p>
+          {format.id === 'words' ? (
+            <p
+              className='assignment-text tooltip__parent'
+              onClick={() => toggleTooltip(tooltipRef)}
+            >
+              <div ref={tooltipRef} className='tooltip'>
+                {direction.answers(answers[question]).map((a) => (
+                  <p>{a}</p>
+                ))}
+              </div>
+              {direction.question(answers[question])}
+            </p>
+          ) : (
+            <p className='assignment-text'>
+              {direction.question(answers[question])}
+            </p>
+          )}
+
           <input ref={answerRef} className='practice-input' type='text' />
           <button className='cta--next' onClick={nextAction}>
             Check
@@ -193,7 +220,6 @@ export default function PracticeReadPage() {
 
     default:
     case 'start':
-    case 'choose-type':
       nextAction = (format) => () => {
         setFormat(format)
         setState('choose-direction')
