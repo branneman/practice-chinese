@@ -1,0 +1,134 @@
+[
+  {
+    "chinese": [{ "word": "要", "pinyin": "yào" }],
+    "english": ["want", "ask"]
+  },
+  {
+    "chinese": [{ "word": "酒", "pinyin": "jiǔ" }],
+    "english": ["alcohol", "liquor", "spirit"]
+  },
+  {
+    "chinese": [{ "word": "啤酒", "pinyin": "píjiǔ" }],
+    "english": ["beer"]
+  },
+  {
+    "chinese": [{ "word": "瓶", "pinyin": "píng" }],
+    "english": ["bottle", "pitcher", "jug", "vase"]
+  },
+  {
+    "chinese": [{ "word": "干杯", "pinyin": "gānbēi" }],
+    "english": ["cheers", "bottoms up", "(lit. \"bottom dry\")"]
+  },
+  {
+    "chinese": [{ "word": "年", "pinyin": "nián" }],
+    "english": ["year"]
+  },
+  {
+    "chinese": [{ "word": "年龄", "pinyin": "niánlíng" }],
+    "english": ["age"]
+  },
+  {
+    "chinese": [{ "word": "今年", "pinyin": "jīnjián" }],
+    "english": ["this year"]
+  },
+  {
+    "chinese": [{ "word": "岁", "pinyin": "suì" }],
+    "english": ["years old"]
+  },
+  {
+    "chinese": [{ "word": "了", "pinyin": "le" }],
+    "english": ["grammarword]", "[past particle]"]
+  },
+  {
+    "chinese": [{ "word": "多", "pinyin": "duō" }],
+    "english": ["how"]
+  },
+  {
+    "chinese": [{ "word": "几", "pinyin": "jǐ" }],
+    "english": ["how many"]
+  },
+  {
+    "chinese": [{ "word": "大", "pinyin": "dà" }],
+    "english": ["big", "large", "old (people)"]
+  },
+  {
+    "chinese": [{ "word": "大人", "pinyin": "dàren" }],
+    "english": ["adult"]
+  },
+  {
+    "chinese": [{ "word": "大国", "pinyin": "dàguó" }],
+    "english": ["huge country"]
+  },
+  {
+    "chinese": [{ "word": "大杯", "pinyin": "dà bēi" }],
+    "english": ["large glass", "large cup", "big glass", "big cup"]
+  },
+  {
+    "chinese": [{ "word": "对", "pinyin": "duì" }],
+    "english": ["right", "correct"]
+  },
+  {
+    "chinese": [{ "word": "不对", "pinyin": "bùduì" }],
+    "english": ["wrong", "incorrect"]
+  },
+  {
+    "chinese": [{ "word": "真", "pinyin": "zhēn" }],
+    "english": ["real", "really"]
+  },
+  {
+    "chinese": [{ "word": "真的", "pinyin": "zhēnde" }],
+    "english": ["really?"]
+  },
+  {
+    "chinese": [{ "word": "小", "pinyin": "xiǎo" }],
+    "english": ["young", "small"]
+  },
+  {
+    "chinese": [{ "word": "年轻", "pinyin": "niánqīng" }],
+    "english": ["young", "youthful"]
+  },
+  {
+    "chinese": [{ "word": "过奖", "pinyin": "guòjiǎng" }],
+    "english": ["flattered"]
+  },
+  {
+    "chinese": [{ "word": "看上去", "pinyin": "kànshàngqù" }],
+    "english": ["appear", "seem", "look"]
+  },
+  {
+    "chinese": [{ "word": "左右", "pinyin": "zuǒyòu" }],
+    "english": ["about", "approximate"]
+  },
+  {
+    "chinese": [{ "word": "这么说", "pinyin": "zhèmeshuō" }],
+    "english": ["in that case"]
+  },
+  {
+    "chinese": [{ "word": "应该", "pinyin": "yīnggāi" }],
+    "english": ["must", "should", "ought to"]
+  },
+  {
+    "chinese": [{ "word": "该", "pinyin": "gāi" }],
+    "english": ["must", "(short version)"]
+  },
+  {
+    "chinese": [{ "word": "认识", "pinyin": "rènshi" }],
+    "english": ["know", "(somebody)"]
+  },
+  {
+    "chinese": [{ "word": "我也是", "pinyin": "wǒyěshì" }],
+    "english": ["me too", "same here"]
+  },
+  {
+    "chinese": [{ "word": "再见", "pinyin": "zàijiàn" }],
+    "english": ["goodbye"]
+  },
+  {
+    "chinese": [{ "word": "慢", "pinyin": "màn" }],
+    "english": ["slow", "slowly"]
+  },
+  {
+    "chinese": [{ "word": "对不起", "pinyin": "duìbuqǐ" }],
+    "english": ["excuse me", "pardon"]
+  }
+]
