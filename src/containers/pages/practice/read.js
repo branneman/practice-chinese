@@ -93,23 +93,23 @@ export default function PracticeReadPage() {
           <p className='assignment-description'>Translate {direction.name}</p>
           {format.id === 'words' ? (
             <p
-              className='assignment-text tooltip__parent'
+              className='assignment-text f tooltip__parent'
               onClick={() => toggleTooltip(tooltipRef)}
             >
               <div ref={tooltipRef} className='tooltip'>
                 {direction.answers(answers[question]).map((a) => (
-                  <p>{a}</p>
+                  <p className='f'>{a}</p>
                 ))}
               </div>
               {direction.question(answers[question])}
             </p>
           ) : (
-            <p className='assignment-text'>
+            <p className='assignment-text f'>
               {direction.question(answers[question])}
             </p>
           )}
 
-          <input ref={answerRef} className='practice-input' type='text' />
+          <input ref={answerRef} className='practice-input f' type='text' />
           <button className='cta--next' onClick={nextAction}>
             Check
           </button>
@@ -143,10 +143,10 @@ export default function PracticeReadPage() {
             Incorrect!
           </p>
           <p className='assignment-description'>Your answer:</p>
-          <p className='assignment-description'>{answers[question].answer}</p>
+          <p className='assignment-description f'>{answers[question].answer}</p>
           <p className='assignment-description'>Correct answer(s):</p>
           {direction.answers(answers[question]).map((x) => (
-            <p className='assignment-description'>{x}</p>
+            <p className='assignment-description f'>{x}</p>
           ))}
           <button className='cta--next' onClick={nextAction}>
             Continue
@@ -183,7 +183,7 @@ export default function PracticeReadPage() {
             What vocabulary do you want to practice?
           </p>
           {direction.vocabs.map((vocab) => (
-            <button className='cta' onClick={nextAction(vocab)}>
+            <button key={vocab} className='cta' onClick={nextAction(vocab)}>
               {vocab}
             </button>
           ))}
@@ -209,6 +209,7 @@ export default function PracticeReadPage() {
           </p>
           {format.directions.map((direction) => (
             <button
+              key={direction.id}
               className='cta cta--smaller'
               onClick={nextAction(direction)}
             >
@@ -230,7 +231,11 @@ export default function PracticeReadPage() {
             What format do you want to practice?
           </p>
           {fn.read.map((format) => (
-            <button className='cta' onClick={nextAction(format)}>
+            <button
+              key={format.id}
+              className='cta'
+              onClick={nextAction(format)}
+            >
               {format.name}
             </button>
           ))}

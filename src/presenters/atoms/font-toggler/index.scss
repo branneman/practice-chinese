@@ -1,0 +1,21 @@
+.font-toggler {
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  right: 1.35em;
+  width: 1.35em;
+  height: 1.35em;
+  margin: 0;
+  border: 0;
+  padding: 0;
+  background-image: url('/static/img/icon-font.svg');
+  background-color: transparent;
+  background-size: 65%;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-size: 3em;
+  line-height: 1;
+  color: lightgray;
+  vertical-align: top;
+  cursor: pointer;
+}

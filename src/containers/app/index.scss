@@ -1,7 +1,6 @@
-html,
-body {
-}
-
+/**
+ * Box-sizing
+ */
 html {
   box-sizing: border-box;
 }
@@ -10,25 +9,44 @@ html {
 *:after {
   box-sizing: inherit;
 }
-
 body {
   margin: 0;
   padding: 0;
+}
+
+/**
+ * Typography
+ */
+body,
+html.wf-loading body {
   font-family: sans-serif;
   font-weight: 300;
   font-size: 16px;
   line-height: 1.4;
 }
+html.wf-active.wf-notosanssc-n4-active body.f-notosanssc .f {
+  font-family: 'Noto Sans SC', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+html.wf-active.wf-notoserifsc-n4-active body.f-notoserifsc .f {
+  font-family: 'Noto Serif SC', serif;
+  font-style: normal;
+  font-weight: normal;
+}
+html.wf-active.wf-mashanzheng-n4-active body.f-mashanzheng .f {
+  font-family: 'Ma Shan Zheng', cursive;
+  font-style: normal;
+  font-weight: normal;
+}
 p {
   margin-top: 0;
 }
-
 a,
 a:hover,
 a:active {
   color: inherit;
 }
-
 h1,
 h2,
 h3 {
@@ -39,6 +57,9 @@ h3 {
   font-size: 1.6em;
 }
 
+/**
+ * Layout
+ */
 .layout__container {
   position: relative;
   width: 100vw;

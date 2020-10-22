@@ -58,7 +58,7 @@ export default function Numbers() {
         <section className='section section--numbers-practice'>
           <p className='assignment-description'>Translate to Chinese</p>
           <p className='assignment-text'>{int}</p>
-          <input ref={answerRef} className='practice-input' type='text' />
+          <input ref={answerRef} className='f practice-input' type='text' />
           <button className='cta--next' onClick={nextAction}>
             Check
           </button>
@@ -93,7 +93,8 @@ export default function Numbers() {
           </p>
           {answers[answers.length - 1] && (
             <p className='assignment-description'>
-              Correct answer: {answers[answers.length - 1].correct}
+              Correct answer:
+              <span className='f'>{answers[answers.length - 1].correct}</span>
             </p>
           )}
           <button className='cta--next' onClick={nextAction}>
