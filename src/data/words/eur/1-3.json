@@ -55,7 +55,10 @@
     "chinese": [{ "word": "欢迎", "pinyin": "huān yíng" }],
     "english": ["welcome"]
   },
-  { "chinese": [{ "word": "来", "pinyin": "lái" }], "english": ["to come"] },
+  {
+    "chinese": [{ "word": "来", "pinyin": "lái" }],
+    "english": ["come", "to come"]
+  },
   {
     "chinese": [{ "word": "中国", "pinyin": "zhōngguó" }],
     "english": ["China"]
